@@ -3,7 +3,9 @@
   <entry>
     <title>笔记</title>
     <url>/2020/03/26/%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><p>1.你要在文章的front-matter区域里添加top: True属性来放入这篇文章置顶。<br>2.你可以参考hexo-generator-index-pin-top这个仓库来了解更多细节。</p>
+    <content><![CDATA[<h1 id="发布前提"><a href="#发布前提" class="headerlink" title="发布前提"></a>发布前提</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top_img: (除非特定需要，可以不寫)</span><br><span class="line">comments  是否顯示評論(除非設置<span class="literal">false</span>,可以不寫)</span><br><span class="line">cover:  縮略圖</span><br><span class="line">toc:  是否顯示toc (除非特定文章設置，可以不寫)</span><br><span class="line">toc_number: 是否顯示toc數字 (除非特定文章設置，可以不寫)</span><br><span class="line">copyright: 是否顯示版權 (除非特定文章設置，可以不寫)</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">hide:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><p>1.你要在文章的front-matter区域里添加top: True属性来放入这篇文章置顶。<br>2.你可以参考hexo-generator-index-pin-top这个仓库来了解更多细节。</p>
 <p>举个例子：</p>
 <pre><code>你的某篇文章开头如下：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: xxxx</span><br><span class="line">tags:</span><br><span class="line">  - xxx</span><br><span class="line">date: 2018-08-08 08:08:08</span><br><span class="line">---</span><br><span class="line">// ....</span><br></pre></td></tr></table></figure>
 
