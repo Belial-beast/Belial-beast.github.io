@@ -19,7 +19,7 @@
 用法</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : Disable icon <span class="keyword">in</span> note.</span><br><span class="line"></span><br><span class="line">All parameters are optional.</span><br></pre></td></tr></table></figure>
 <pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/" alt="标签" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233145.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233145.png" alt="标签"></p>
 <h1 id="版权"><a href="#版权" class="headerlink" title="版权"></a>版权</h1><p>转载文章不需要显示版权</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">copyright: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
@@ -35,13 +35,13 @@
 <li><p>img-url：图库封面的地址</p>
 <p> 例如：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;div class=<span class="string">"gallery-group-main"</span>&gt;</span><br><span class="line">&#123;% galleryGroup <span class="string">'壁紙'</span> <span class="string">'收藏的一些壁紙'</span> <span class="string">'/Gallery/wallpaper'</span> https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'漫威'</span> <span class="string">'關於漫威的圖片'</span> <span class="string">'/Gallery/marvel'</span> https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'OH MY GIRL'</span> <span class="string">'關於OH MY GIRL的圖片'</span> <span class="string">'/Gallery/ohmygirl'</span> https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/" alt="图库" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191226003414.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191226003414.png" alt="图库"></p>
 </li>
 </ol>
 <h1 id="画廊相册"><a href="#画廊相册" class="headerlink" title="画廊相册"></a>画廊相册</h1><pre><code>写法：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 圖片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
 
 <pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-scary-pumpkin-hand-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-fresh-fish-dinner-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-mountain-cloud-landscape-900x600.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/iphone-free-stock-photos-2210x3315.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/young-millennial-girl-drinking-lemonade-and-overlooking-the-city-2210x1473.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/modern-graphic-designer-essentials_free_stock_photos_picjumbo_HNCK4919-2210x1474.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/" alt="图片" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191101143214.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191101143214.png" alt="图片"></p>
 <pre><code># 隐藏标签
 如果你想把一些文字，内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。
 
@@ -69,10 +69,10 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 <li><p>color：按钮文字的颜色（任选）</p>
 <p> 例如：inline</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哪個英文字母最酷？ &#123;% hideInline 因為西裝褲(C裝酷),查看答案,<span class="comment">#FF7242,#fff %&#125;</span></span><br><span class="line"></span><br><span class="line">門裏站着一個人? &#123;% hideInline 閃 %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/" alt="图片" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tag-hide-inline.gif"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tag-hide-inline.gif" alt="图片"></p>
 <p> 例如：block</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% hideBlock 查看答案 %&#125;</span><br><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/" alt="图片" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-tag-hide-block.gif"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-tag-hide-block.gif" alt="图片"></p>
 </li>
 </ol>
 ]]></content>
