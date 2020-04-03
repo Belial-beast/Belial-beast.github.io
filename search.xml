@@ -119,11 +119,11 @@
 在浏览器中输入先不要打开
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://music.163.com/<span class="comment">#</span></span><br></pre></td></tr></table></figure>
 
-<p>找到自己想创建外链播放器的歌曲 在生成外链播放器出右键审查<br> class="lazyload" data-src="/material/Pictures/wangyiyun.png"<img src="/"><br>复制data-href双引号中间的内容</p>
+<p>找到自己想创建外链播放器的歌曲 在生成外链播放器出右键审查<br><img src="/" alt="tup" class="lazyload" data-src="/material/Pictures/wangyiyun.png"><br>复制data-href双引号中间的内容</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/outchain/2/536890393/</span><br></pre></td></tr></table></figure>
 <p>将其粘贴到之前到链接上就可以创建外链播放器啦</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://music.163.com/<span class="comment">#/outchain/2/536890393/</span></span><br></pre></td></tr></table></figure>
- class="lazyload" data-src="/material/Pictures/wangyiyun-1.png"<img src="/">
+<p><img src="/" alt="sd" class="lazyload" data-src="/material/Pictures/wangyiyun-1.png"></p>
 ]]></content>
       <categories>
         <category>Destiny 2</category>
