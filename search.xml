@@ -3,7 +3,12 @@
   <entry>
     <title>命运2 周报4.8</title>
     <url>/2020/04/08/%E5%91%BD%E8%BF%902-%E5%91%A8%E6%8A%A54-8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/" alt="周报" class="lazyload" data-src="/img/2020-4-8.jpg"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+			<script>
+				console.error("Error: [hexo-tag-aplayer] Meting support is disabled, cannot resolve the meting tags properly.");
+			</script>
+
+<p><img src="/" alt="周报" class="lazyload" data-src="/img/2020-4-8.jpg"></p>
 ]]></content>
       <categories>
         <category>Destiny 2</category>
