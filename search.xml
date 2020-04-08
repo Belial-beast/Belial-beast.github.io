@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>命运2 周报4.8</title>
+    <url>/2020/04/08/%E5%91%BD%E8%BF%902-%E5%91%A8%E6%8A%A54-8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/" alt="周报" class="lazyload" data-src="/img/2020-4-8.jpg"></p>
+]]></content>
+      <categories>
+        <category>Destiny 2</category>
+      </categories>
+      <tags>
+        <tag>Destiny 2</tag>
+        <tag>命运2</tag>
+        <tag>周报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown</title>
     <url>/2020/04/06/Markdown/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><h2 id="使用-号标记"><a href="#使用-号标记" class="headerlink" title="使用#号标记"></a>使用#号标记</h2><p>使用 <em>#</em> 号可表示1-6 级标题，一级标题对应一个 <em>#</em> 号，二级标题对应两个 <em>#</em> 号，以此类推。</p>
