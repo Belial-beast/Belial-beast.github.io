@@ -274,6 +274,54 @@
   </entry>
   
   <entry>
+    <title>正则表达式</title>
+    <link href="https://命运2.网址/2020/03/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>https://命运2.网址/2020/03/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+    <published>2020-03-25T03:44:08.000Z</published>
+    <updated>2020-04-11T08:58:23.293Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>地址： <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a> </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">a，b或c的单个字符[abc]</span><br><span class="line">下列字符除外：a，b或c[^abc]</span><br><span class="line">范围内的字符：az[az]</span><br><span class="line">不在此非为内的字符：az[^az]</span><br><span class="line">范围内的字符：az或AZ[a-zAz-]</span><br><span class="line">任何单个字符.</span><br><span class="line">任何空白字符\s</span><br><span class="line">任何非空白字符\S</span><br><span class="line">任何数字\d</span><br><span class="line">任何非数字\D</span><br><span class="line">任何字源\w</span><br><span class="line">任何非文字字源\W</span><br><span class="line">捕获所有封闭的内容(...)</span><br><span class="line">匹配a或b(a|b)</span><br><span class="line">零或一个a?</span><br><span class="line">零个或多个a*</span><br><span class="line">一个或多个a+</span><br><span class="line">恰好是三个a&#123;3&#125;</span><br><span class="line">三个或者更多a&#123;3,&#125;</span><br><span class="line">在3到6之间a&#123;3,6&#125;</span><br><span class="line">字符串开始^</span><br><span class="line">字符串结尾$</span><br><span class="line">单词边界\b</span><br><span class="line">非单词边界\B</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="error" scheme="https://xn--2-wd9al63p.xn--ses554g/categories/error/"/>
+    
+    
+      <category term="error" scheme="https://xn--2-wd9al63p.xn--ses554g/tags/error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://命运2.网址/2020/03/24/hello-world/"/>
+    <id>https://命运2.网址/2020/03/24/hello-world/</id>
+    <published>2020-03-24T07:07:38.655Z</published>
+    <updated>2020-04-11T08:58:31.843Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>关于网易云音乐无版权歌曲</title>
     <link href="https://命运2.网址/2019/06/17/%E7%A0%B4%E8%A7%A3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%97%A0%E7%89%88%E6%9D%83%E6%AD%8C%E6%9B%B2/"/>
     <id>https://命运2.网址/2019/06/17/%E7%A0%B4%E8%A7%A3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%97%A0%E7%89%88%E6%9D%83%E6%AD%8C%E6%9B%B2/</id>
@@ -328,6 +376,32 @@
       <category term="网络" scheme="https://xn--2-wd9al63p.xn--ses554g/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="网易云" scheme="https://xn--2-wd9al63p.xn--ses554g/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迪兰RX580 2048SP刷VBIOS成功吃上黑苹果</title>
+    <link href="https://命运2.网址/2019/04/18/%E8%BF%AA%E5%85%B0RX590%E5%88%B7VBIOS%E2%80%94%E2%80%94ATIFlash/"/>
+    <id>https://命运2.网址/2019/04/18/%E8%BF%AA%E5%85%B0RX590%E5%88%B7VBIOS%E2%80%94%E2%80%94ATIFlash/</id>
+    <published>2019-04-18T02:40:47.000Z</published>
+    <updated>2020-04-11T08:58:14.890Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="ATI-ATIFlash"><a href="#ATI-ATIFlash" class="headerlink" title="ATI ATIFlash"></a>ATI ATIFlash</h3><p>下载地址：<a href="https://www.techpowerup.com/download/bios-flashing/" target="_blank" rel="noopener">https://www.techpowerup.com/download/bios-flashing/</a><br>AMD显卡下载AMD/ATI ATIFlash，下载解压到C:/atiflash<br> class="lazyload" data-src="/material/Pictures/20190418-1.png"<img src="/"><br><img src="/" alt="图片" class="lazyload" data-src="/material/Pictures/20190418-1.png"></p><ol><li>备份现有ROM，进入目录使用管理员身份运行amdvbflashWin.exe，选择需要导出的显卡ROM，我一般放到C:/atiflash下，方便命令解析  class="lazyload" data-src="/material/Pictures/20190418-2.png"<img src="/">  class="lazyload" data-src="/material/Pictures/20190418-3.png"<img src="/"> ![图片1](/material/Pictures/20190418-2.png) ![图片2](/material/Pictures/20190418-3.png)</li><li>下载需要替换的ROM，也放入C:/atiflash下。下面我会讲解ROM的选择要点</li><li>打开使用管理员身份运行的CMD或者PowerShell，进入atiflash目录运行 .\ATIWinflash -unlockrom 0解锁ROM</li><li>运行 .\amdvbflash -f -p 0 .\Sapphire.RX570.4096.Elpida.ORI.rom 刷入ROM，当看到类似下面这样的信息说明刷入成功，可以立即重启系统  class="lazyload" data-src="/material/Pictures/20190418-4.png"<img src="/"> ![图片2](/material/Pictures/20190418-4.png)</li><li>进入系统发现分辨率没了，属于正常情况，一般不要动，Windows自动加载“新”显卡，对显卡安装驱动</li><li>打开GPU-Z可以看到“新”显卡的信息</li><li>对于一些定制版本的马甲显卡，如RX580 2048sp可能之前不能关闭CSM，现在刷入本核心的ROM（RX570）后，可以重启电脑进入BIOS关闭了</li></ol><p>注意：如果黑卡了，可以找个WinPE进入命令行刷回原ROM</p><h3 id="ROM的说明"><a href="#ROM的说明" class="headerlink" title="ROM的说明"></a>ROM的说明</h3><ol><li>核心一定要准确，AMD的卡肯定不能刷入NVIDIA的ROM，版本太低或者太高的ROM大部分也不能刷入</li><li>各品牌之间大部分是可以互刷的，但不推荐，慎刷！</li><li>显存大小必须一致，VBIOS都对显存做了校验</li><li>显存产商必须一致！刷似乎可以刷入（没试过），但容易黑卡</li></ol><h3 id="Miner-Tools"><a href="#Miner-Tools" class="headerlink" title="Miner.Tools"></a>Miner.Tools</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol><li>刷 bios 前注意备份原版 bios，确保你准备刷入 bios 支持你的显卡，比如显卡的型号，显存容量，显卡型号，公版或者非公版，这些都可能导致刷写失败。</li><li>刷写 bios 的时候，尽量只插一张显卡，并且插在 16x 接口上，不要使用显卡延长线。</li><li>刷bios有风险，请谨慎操作</li></ol><h3 id="刷bios"><a href="#刷bios" class="headerlink" title="刷bios"></a>刷bios</h3><ol><li><p>使用最新的 gpu-z备份显卡 bios，点击如图所示的箭头，选择保存到文件，然后选择保存的位置并输入文件名称，确定即可。备份的显卡 bios 的后缀为 rom</p>  class="lazyload" data-src="/material/Pictures/20190418-5.png"<img src="/"> ![图片2](/material/Pictures/20190418-5.png)</li><li><p>使用 atiflash 刷写 amd 显卡的 bios。<br> 首先把atiflash（<a href="https://pan.baidu.com/s/1b8vz4a" target="_blank" rel="noopener">https://pan.baidu.com/s/1b8vz4a</a>  ） 文件夹解压放到 c 盘根目录下，以管理员身份打开命令提示符。</p>  class="lazyload" data-src="/material/Pictures/20190418-6.png"<img src="/"> ![图片2](/material/Pictures/20190418-6.png) 输入 cd  /   返回 c 盘根目录，输入 cd    atiflash_274 可以进入atiflash_274文件夹所在目录。<p> 输入 AtiFlash.exe    -unlockrom    0 并回车，解锁显卡 bios。回车后会显示 rom    unlocked，表示 bios 已经解锁。</p>  class="lazyload" data-src="/material/Pictures/20190418-7.png"<img src="/"> ![图片2](/material/Pictures/20190418-7.png) 然后输入 AtiFlash.exe    -f    -p    0    xxx.rom 回车刷入 bios。  class="lazyload" data-src="/material/Pictures/20190418-8.png"<img src="/"> ![图片2](/material/Pictures/20190418-8.png) 之后，重启即可。### 如果很不幸刷黑了，可以参考以下</li><li><p>准备一张好的显卡作为输出卡插在主板 16x 接口上，将刷黑的卡使用显卡延长线插在 1x 接口上。（主板或者 cpu 含有集成显卡或者核心显卡的，救活的思路类似，但可能需要在主板 bios 中设置集显或核显的优先级为最高，有点主板中还需要设置集显为 always    on 状态。因为主板型号及 bios 版本众多，故无法详述）</p></li><li><p>进入 windows 系统，如果可以在设备管理器里面识别到刷黑的显卡，就比较简单。</p></li></ol><p>使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AtiFlash.exe-i0</span><br></pre></td></tr></table></figure><p>确定显卡信息是否是输出卡，如果是，按照以下操作刷入备份的 </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">backup.rom：AtiFlash.exe-f-p 1backup.rom</span><br></pre></td></tr></table></figure><ol start="3"><li>如果不能识别刷黑的卡，可以卸载并重装驱动，看能否识别. </li></ol><h3 id="如果-windows-下不能识别，需要在-dos-下刷"><a href="#如果-windows-下不能识别，需要在-dos-下刷" class="headerlink" title="如果 windows 下不能识别，需要在 dos 下刷"></a>如果 windows 下不能识别，需要在 dos 下刷</h3><ol><li><p>准备一个可以进入 dos 的 u 盘，将备份的 bios 放在atiflash_274文件夹中，再将 atiflash 文件夹放在 u 盘根目录中。</p></li><li><p>将刷黑的卡插上，改 bios 为 u 盘启动优先。</p></li><li><p>从 u 盘启动后，找到 dos 工具选项打开 dos，输入<br> c： 查看 c 盘</p><p> dir： 查看当前目录文件详情</p><p> 以此方法找到 u 盘文件位置</p></li><li><p>输入AtiFlash.exe    -i 查看显卡信息,如果可以识别，输入AtiFlash.exe    -f    -p    backup.rom 刷入备份的 backup.rom</p></li><li><p>重启看显卡是否救回</p></li></ol><h3 id="如果在-dos-下还是不能识别，可以尝试盲刷"><a href="#如果在-dos-下还是不能识别，可以尝试盲刷" class="headerlink" title="如果在 dos 下还是不能识别，可以尝试盲刷"></a>如果在 dos 下还是不能识别，可以尝试盲刷</h3><ol><li><p>制作一个简易的 DOS 启动 U 盘；</p></li><li><p>建立一个 Autoexec.bat（内容： atiflash    -p    -f    0    backup.rom）；</p></li><li><p>将备份 backup.rom 和 atiflash 文件全部放在 U 盘根目录；</p></li><li><p>将刷黑的卡单独插在 16x 接口上，设置 u 盘为第一启动；</p></li><li><p>重启，等待一分钟后按 ctrl+alt+alt，拔下 u 盘；</p></li><li><p>重启查看显卡是否救活 </p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="黑苹果" scheme="https://xn--2-wd9al63p.xn--ses554g/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="https://xn--2-wd9al63p.xn--ses554g/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
