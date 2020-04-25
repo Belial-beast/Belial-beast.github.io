@@ -4,12 +4,12 @@
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/joke.ico");
-         document.title = '！Guardian Down ◕ ں ◕！ ';
+         document.title = '( ꒪⌓꒪)！';
          clearTimeout(titleTime);
      }
      else {
          $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = '(ฅ>ω<*ฅ) ~' + OriginTitle;
+         document.title = 'Wellcome back ~' + OriginTitle;
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
