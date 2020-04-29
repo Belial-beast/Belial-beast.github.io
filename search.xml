@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Destiny2Weekly4-29</title>
+    <url>/2020/04/29/Destiny2Weekly4-29/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/" alt="4-29" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/4-29.jpg"></p>
+]]></content>
+      <categories>
+        <category>Destiny 2</category>
+      </categories>
+      <tags>
+        <tag>Destiny 2</tag>
+        <tag>命运2</tag>
+        <tag>周报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>更新日志(雾)</title>
     <url>/2020/04/25/update/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="4月28日更新"><a href="#4月28日更新" class="headerlink" title="4月28日更新"></a>4月28日更新</h1><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul>
+<li>修复导航栏</li>
+</ul>
+<hr>
+<h1 id="4月28日更新"><a href="#4月28日更新" class="headerlink" title="4月28日更新"></a>4月28日更新</h1><ul>
 <li>添加评论邮件提醒<br><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/U20f1ceeebaca4d63bf8243e7b83b364bb.png"></li>
 <li>添加评论微信提醒<br><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/Ued033ef707904051a3f9f5531e68b8d3O.jpg"></li>
 <li>添加评论QQ提醒<br><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/Ua6d1376e0bdd4756a34087384f717122J.jpg"></li>
 <li>相册更新(上传好费劲…)</li>
+<li>新增导航栏BUG</li>
 </ul>
 <hr>
 <h1 id="4月27日更新"><a href="#4月27日更新" class="headerlink" title="4月27日更新"></a>4月27日更新</h1><ul>
@@ -1193,12 +1212,12 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-        <div id="aplayer-XTbTDHpO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-xnxKQifa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-XTbTDHpO"),
+            element: document.getElementById("aplayer-xnxKQifa"),
             narrow: false,
             autoplay: false,
             showlrc: false,
