@@ -17,7 +17,12 @@
   <entry>
     <title>一本正经的更新日志</title>
     <url>/posts/27362/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="4月30日更新"><a href="#4月30日更新" class="headerlink" title="4月30日更新"></a>4月30日更新</h1><ul>
+<li>版本升级</li>
+<li>修复主页背景只有400像素问题</li>
+</ul>
+<hr>
+<h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul>
 <li>修复导航栏</li>
 <li>添加<a href="https://search.google.com/u/0/search-console?resource_id=sc-domain%3Axn--2-wd9al63p.xn--ses554g" target="_blank" rel="noopener">Google Search Console</a></li>
 <li>添加<a href="https://analytics.google.com/analytics/web/#/report-home/a163767383w229216075p215986012" target="_blank" rel="noopener">Google Analytics(分析)</a></li>
@@ -1217,12 +1222,12 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-        <div id="aplayer-iTTLkiUu" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-xrbmkMaz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-iTTLkiUu"),
+            element: document.getElementById("aplayer-xrbmkMaz"),
             narrow: false,
             autoplay: false,
             showlrc: false,
