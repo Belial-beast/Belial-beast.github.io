@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Where Is Xur 2020-5-2</title>
+    <url>/posts/50998/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="土卫六"><a href="#土卫六" class="headerlink" title="土卫六"></a>土卫六</h1><h2 id="钻井"><a href="#钻井" class="headerlink" title="钻井"></a>钻井</h2><p><img src="/" alt="xur" class="lazyload" data-src="/img/xur%E5%9C%9F%E5%8D%AB%E5%85%AD.jpg"></p>
+]]></content>
+      <categories>
+        <category>Destiny 2</category>
+      </categories>
+      <tags>
+        <tag>Destiny 2</tag>
+        <tag>命运2</tag>
+        <tag>老九</tag>
+        <tag>xur</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>命运2 周报4-29</title>
     <url>/posts/61903/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/" alt="4-29" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/4-29.jpg"></p>
@@ -20,6 +35,7 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="4月30日更新"><a href="#4月30日更新" class="headerlink" title="4月30日更新"></a>4月30日更新</h1><ul>
 <li>版本升级</li>
 <li>修复主页背景只有400像素问题</li>
+<li>增加页脚</li>
 </ul>
 <hr>
 <h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul>
@@ -1222,12 +1238,12 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-        <div id="aplayer-xrbmkMaz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-RkXKDsoC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-xrbmkMaz"),
+            element: document.getElementById("aplayer-RkXKDsoC"),
             narrow: false,
             autoplay: false,
             showlrc: false,
