@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dalaoa.top/"/>
-  <updated>2020-05-09T08:53:00.321Z</updated>
+  <updated>2020-05-09T09:31:43.477Z</updated>
   <id>https://dalaoa.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>催化掉落及完成方式</title>
+    <link href="https://dalaoa.top/posts/18837/"/>
+    <id>https://dalaoa.top/posts/18837/</id>
+    <published>2020-05-09T09:29:31.000Z</published>
+    <updated>2020-05-09T09:31:43.477Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="做个标记-翻译完成更新"><a href="#做个标记-翻译完成更新" class="headerlink" title="做个标记 翻译完成更新"></a>做个标记 翻译完成更新</h1><p><img src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/Exotic+Weapon+Catalysts.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="Destiny 2" scheme="https://dalaoa.top/categories/Destiny-2/"/>
+    
+    
+      <category term="Destiny 2" scheme="https://dalaoa.top/tags/Destiny-2/"/>
+    
+      <category term="命运2" scheme="https://dalaoa.top/tags/%E5%91%BD%E8%BF%902/"/>
+    
+  </entry>
   
   <entry>
     <title>梦魇时间试练</title>
@@ -657,29 +685,6 @@
       <category term="音乐" scheme="https://dalaoa.top/tags/%E9%9F%B3%E4%B9%90/"/>
     
       <category term="原声带" scheme="https://dalaoa.top/tags/%E5%8E%9F%E5%A3%B0%E5%B8%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>加密测试 密码:123456</title>
-    <link href="https://dalaoa.top/posts/7308/"/>
-    <id>https://dalaoa.top/posts/7308/</id>
-    <published>2020-04-07T17:31:16.000Z</published>
-    <updated>2020-05-08T07:49:34.501Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">请输入密码以阅读这篇私密文章。</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="18b375779d9fcc79c811e23a0cb944b179e4af14934605fa2c6856d98e9dcd96">04b96cf03f1b5d00286d72390b6bf2e0817acbfddb7147d2fcc01912c7f5c0f9713c9c317ba53b9347fde83c930f8c77af411014f8ec84eef7465f6027f6e56361da453a696c51ea2cf726ce74f4d1f870ba487ed6f2d242104af5c0877116b7f14bfb7a90c5973d12ee403d2035f9933239ae2447ed66790333bdf54ffb591262e25fa12dbcf137d44c19a6cd948ebafb15e73fa6eff6dc060b9040f5fe74ceda47dc32b97d576023487f051b3ba54830ddfaae470658818c971f2c6f495f96cfc17fa596d89b67cd686453907ac7a08640ffdff0c385b7ac891be818af86c823b55ed5511c7784df35616f70b758b84ff5802483f0f3828ec20a5144dc20410508f9628a1d91acb3e8411f9649a9235577b03dd95628f83e605881f40ee17e97cb81fb30f05f89831e5d0668b2bebbc1ea74d235226817e96bcf9ce64328e28e492a383753898dce1d6c26ab45ad5e47c1f5765f44986d36168e6aedf5742eec47022c635a0619e8dc4cd00ee486a3391fec54ac0043210eff4483e6a7d682a2270ca4d7cdf25997acd07cd553771a1d2755f344d2e397d8e731e23dff1f0dbaaf1099d09f62de89343d2b243de259e5b4bba64280b0b17f8b85fc3d7cce780cf634229155d300f5f966ad33d4660a00fe1ad417796f5031e6550325bf8990ee1cab280decca54f07afcd6d5556d5832b0cbb23950f79119bbcddf604c9deb0af23abad422b2304c2836f99aebdf26865cf00f628da62a0cfba09fa0a5df5ada43506f90f0d48edca8afe1fab69762430f99dff20bf26e1b47ff8f48ac2fba2abb63a815649167ca909cd41756045f185eb26f10d5c0e71f02c87357fb98b0aea6f1b882097975a44bf861662a429595ac4e1a228f331091d0933aac272d53c0db4aae56f3b53a2083ee387b189fe57511fd04ca92c1ade40ba14e1fbb71894a2c952e8e897e2eb6c1aadd1f45f07b7218a2e9674e9d139087d7e1d947e94c093d0fefbd8e240ca7c62f1e428ccd43befa28b62fdc1181f9a78589ff25b78cbb30b306359db921e9100369b0fa7c33a7703a26537fd76a5daf54512fa16d693d321b729cfff89d25dd0dd500c3d2b0079d22c32323ccfd90f3ea64eb190c874a874dd42f0376016f1aaece319cc0a05cbfcbd9a4105cae7a25e78230bbd8da8b13971c236d23dedb1ed179cbd9d12d238a511f69438a81d566b55074c9bf01bdcb169b648dad916f4cff621fe8fc51c9728107e3569b5fcb3bbf46c81180ca27e9aabd99c59239ec3ad7eba61c1bb0a4cdfbd78ed72d7cd3874f4ce2f890d9860d5cc4dffb1633070d94b79f6fd254da8fabce45ebae5b2c5672e9212ba1b44cbe2fe040b4b484b3da15e36527aa6f1e70fa8ba88247b8d15636c3b0e081b1b44b56fdb84855f37d60b88a6a218a14156c483a250b3a0e3e1e834611168fb1ea159d3846483083df314befc8e2e57b</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      此文章已被加密，需要输入密码访问。
-    
-    </summary>
-    
-    
-      <category term="其它" scheme="https://dalaoa.top/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-      <category term="other" scheme="https://dalaoa.top/tags/other/"/>
     
   </entry>
   
