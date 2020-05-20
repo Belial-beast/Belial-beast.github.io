@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>TerrariaServerBuild</title>
+    <url>/posts/50811/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+  </entry>
+  <entry>
+    <title>OneDriveTest</title>
+    <url>/posts/62162/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://storage.live.com/items/BF61C4FE558FA652!3309?authkey=AKpaeURCrBiL48Y" alt="ce3ec5a3-36b8-41d0-ac52-693516c9d434.jpg"><br><img src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/%E6%8B%9B%E5%8B%9F.jpg" alt="海报"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>老九2020-5-16</title>
+    <url>/posts/61639/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="木卫一"><a href="#木卫一" class="headerlink" title="木卫一"></a>木卫一</h1>]]></content>
+      <categories>
+        <category>Destiny 2</category>
+        <category>老九</category>
+      </categories>
+      <tags>
+        <tag>Destiny 2</tag>
+        <tag>命运2</tag>
+        <tag>老九</tag>
+        <tag>xur</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>命运2 周报5-13</title>
     <url>/posts/29582/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/TIM%E5%9B%BE%E7%89%8720200513173647.jpg" alt="5-13"></p>
@@ -1226,6 +1252,17 @@
     <title>一本正经的更新日志</title>
     <url>/posts/27362/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="接近完成了-稳定了上线开更"><a href="#接近完成了-稳定了上线开更" class="headerlink" title="接近完成了 稳定了上线开更"></a>接近完成了 稳定了上线开更</h1><hr>
+<h1 id="5月18日更新"><a href="#5月18日更新" class="headerlink" title="5月18日更新"></a>5月18日更新</h1><ul>
+<li>添加网盘 <a href="https://liumouone.herokuapp.com/" target="_blank" rel="noopener">xianyu</a></li>
+<li>添加网盘 <a href="https://ghoulowl.github.io" target="_blank" rel="noopener">黑虎阿福</a></li>
+</ul>
+<hr>
+<h1 id="5月15日更新"><a href="#5月15日更新" class="headerlink" title="5月15日更新"></a>5月15日更新</h1><ul>
+<li>添加aria2公共离线下载页 <a href="http://101.132.145.32:8080/" target="_blank" rel="noopener">临时地址</a></li>
+<li><del>离线文件下载地址</del> 处理中。。</li>
+<li>OneDrive文件分享页</li>
+</ul>
+<hr>
 <h1 id="5月12日更新"><a href="#5月12日更新" class="headerlink" title="5月12日更新"></a>5月12日更新</h1><ul>
 <li>添加主页</li>
 <li><del>添加留言反馈页</del></li>
