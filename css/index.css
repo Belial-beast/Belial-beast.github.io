@@ -4044,7 +4044,7 @@ img {
   text-decoration: none;
 }
 #article-container a {
-  color: #99a9bf;
+  color: #ff9b9b;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -5550,11 +5550,4 @@ figure.gallery-group .gallery-group-name:after {
 #local-search .search-result-list {
   overflow-y: auto;
   max-height: 10.5rem;
-}
-body {
-  cursor: url("/img/pointer.cur"), default;
-}
-/**链接指针样式**/
-a:hover {
-  cursor: url("/img/link.cur"), pointer;
 }
