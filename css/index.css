@@ -125,7 +125,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #f88f31;
+  background: #f99;
   color: #f7f7f7;
 }
 #nav #site_title,
