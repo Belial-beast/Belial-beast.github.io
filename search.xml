@@ -1,720 +1,340 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>用SSH工具XShell连接谷歌云root用户</title>
-    <url>/posts/28188/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="进入谷歌云实例面板"><a href="#进入谷歌云实例面板" class="headerlink" title="进入谷歌云实例面板"></a>进入谷歌云实例面板</h1><p>进入谷歌云实例面板连接ssh</p>
-<h1 id="切换到root角色"><a href="#切换到root角色" class="headerlink" title="切换到root角色"></a>切换到root角色</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure>
-<h1 id="修改SSH配置文件-etc-ssh-sshd-config"><a href="#修改SSH配置文件-etc-ssh-sshd-config" class="headerlink" title="修改SSH配置文件/etc/ssh/sshd_config"></a>修改SSH配置文件/etc/ssh/sshd_config</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config</span><br></pre></td></tr></table></figure>
-<h2 id="修改PermitRootLogin和PasswordAuthentication为yes"><a href="#修改PermitRootLogin和PasswordAuthentication为yes" class="headerlink" title="修改PermitRootLogin和PasswordAuthentication为yes"></a>修改PermitRootLogin和PasswordAuthentication为yes</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Authentication:</span><br><span class="line">PermitRootLogin yes &#x2F;&#x2F;默认为no，需要开启root用户访问改为yes</span><br><span class="line"></span><br><span class="line"># Change to no to disable tunnelled clear text passwords</span><br><span class="line">PasswordAuthentication yes &#x2F;&#x2F;默认为no，改为yes开启密码登陆</span><br></pre></td></tr></table></figure>
-<h1 id="给root用户设置密码"><a href="#给root用户设置密码" class="headerlink" title="给root用户设置密码"></a>给root用户设置密码</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">passwd root</span><br></pre></td></tr></table></figure>
-<h1 id="重启SSH服务使修改生效"><a href="#重启SSH服务使修改生效" class="headerlink" title="重启SSH服务使修改生效"></a>重启SSH服务使修改生效</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;etc&#x2F;init.d&#x2F;ssh restart</span><br></pre></td></tr></table></figure>
-<h1 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h1><p>在xshell中，直接使用root账号密码登录。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>用SSH工具XShell连接谷歌云root用户</title>
+      <link href="/posts/28188/"/>
+      <url>/posts/28188/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="进入谷歌云实例面板"><a href="#进入谷歌云实例面板" class="headerlink" title="进入谷歌云实例面板"></a>进入谷歌云实例面板</h1><p>进入谷歌云实例面板连接ssh</p><h1 id="切换到root角色"><a href="#切换到root角色" class="headerlink" title="切换到root角色"></a>切换到root角色</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -i</span><br></pre></td></tr></table></figure><h1 id="修改SSH配置文件-etc-ssh-sshd-config"><a href="#修改SSH配置文件-etc-ssh-sshd-config" class="headerlink" title="修改SSH配置文件/etc/ssh/sshd_config"></a>修改SSH配置文件/etc/ssh/sshd_config</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config</span><br></pre></td></tr></table></figure><h2 id="修改PermitRootLogin和PasswordAuthentication为yes"><a href="#修改PermitRootLogin和PasswordAuthentication为yes" class="headerlink" title="修改PermitRootLogin和PasswordAuthentication为yes"></a>修改PermitRootLogin和PasswordAuthentication为yes</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Authentication:</span><br><span class="line">PermitRootLogin yes &#x2F;&#x2F;默认为no，需要开启root用户访问改为yes</span><br><span class="line"></span><br><span class="line"># Change to no to disable tunnelled clear text passwords</span><br><span class="line">PasswordAuthentication yes &#x2F;&#x2F;默认为no，改为yes开启密码登陆</span><br></pre></td></tr></table></figure><h1 id="给root用户设置密码"><a href="#给root用户设置密码" class="headerlink" title="给root用户设置密码"></a>给root用户设置密码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd root</span><br></pre></td></tr></table></figure><h1 id="重启SSH服务使修改生效"><a href="#重启SSH服务使修改生效" class="headerlink" title="重启SSH服务使修改生效"></a>重启SSH服务使修改生效</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;etc&#x2F;init.d&#x2F;ssh restart</span><br></pre></td></tr></table></figure><h1 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h1><p>在xshell中，直接使用root账号密码登录。</p>]]></content>
+      
+      
       <categories>
-        <category>服务器</category>
-        <category>谷歌云</category>
+          
+          <category> 服务器 </category>
+          
+          <category> 谷歌云 </category>
+          
       </categories>
-      <tags>
-        <tag>谷歌云</tag>
-        <tag>GCP</tag>
-        <tag>SSH</tag>
-        <tag>Linux</tag>
-        <tag>server</tag>
-        <tag>服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建泰拉瑞亚(Terraria)1.4.0.2服务器</title>
-    <url>/posts/50811/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info">
-            <p>准备一台 VPS：<br>首先需要准备一台 VPS。<br>我的VPS配置如下：<br>CPU：2核<br>内存：2G<br>带宽：2M以上<br>当然以上配置全部是 1 也是能跑，就是可能会很慢或者游戏途中掉线。</p>
-          </div>
-
-<h1 id="设置SWAP"><a href="#设置SWAP" class="headerlink" title="设置SWAP"></a>设置SWAP</h1><p>防止因为内存不足导致游戏被强迫关闭<br>有些vps会默认给一些SWAP有些则不给，如果SWAP不够的话推荐增加一些以保证进程不被关闭。</p>
-<p>确认下SWAP设置了多少</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure>
-<p>如果足够1GB则跳过这一步直接开始搭建游戏！</p>
-<h2 id="删除-SWAP-分区"><a href="#删除-SWAP-分区" class="headerlink" title="删除 SWAP 分区"></a>删除 SWAP 分区</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
-<h2 id="新增-SWAP-分区"><a href="#新增-SWAP-分区" class="headerlink" title="新增 SWAP 分区"></a>新增 SWAP 分区</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;root&#x2F;swapfile bs&#x3D;1M count&#x3D;1024</span><br></pre></td></tr></table></figure>
-
-<h2 id="格式化交换分区文件"><a href="#格式化交换分区文件" class="headerlink" title="格式化交换分区文件"></a>格式化交换分区文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkswap &#x2F;root&#x2F;swapfile</span><br></pre></td></tr></table></figure>
-
-<h2 id="添加开机启动"><a href="#添加开机启动" class="headerlink" title="添加开机启动"></a>添加开机启动</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure>
-<p>添加或修改</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;root&#x2F;swapfile swap swap defaults 0 0</span><br></pre></td></tr></table></figure>
-<div class="note info">
-            <p>进入文本后按键盘上的 insert 按钮开始编辑，按 esc 退出编辑，输入: wq 保存并退出</p>
-          </div>
-
-<h2 id="重启查看否生效"><a href="#重启查看否生效" class="headerlink" title="重启查看否生效"></a>重启查看否生效</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
-<p>重启后输入指令查看下 SWAP 是否增加</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure>
-
-<h1 id="开始搭建服务器"><a href="#开始搭建服务器" class="headerlink" title="开始搭建服务器"></a>开始搭建服务器</h1><div class="note info">
-            <p>这里我选用的系统是 Debian GNU/Linux 10 (buster) 搭建</p><p>在系统安装完毕后使用 Xshell 登录 VPS。跟FlashFXP上传文件<br>（这里以自己的本地电脑是 Windows 为例）</p><p>Xshell 下载地址：<a href="https://www.netsarang.com/zh/xshell/" target="_blank" rel="noopener">https://www.netsarang.com/zh/xshell/</a><br>Xshell 的具体使用方法这里省略，具体可以在网上搜索教程，不难的。</p>
-          </div>
-
-<h2 id="登录-root-账户后输入"><a href="#登录-root-账户后输入" class="headerlink" title="登录 root 账户后输入"></a>登录 root 账户后输入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">apt-get install yum -y</span><br><span class="line">apt-get install wget -y</span><br><span class="line">apt-get install screen -y</span><br></pre></td></tr></table></figure>
-<h2 id="防火墙设置（如果有）："><a href="#防火墙设置（如果有）：" class="headerlink" title="防火墙设置（如果有）："></a>防火墙设置（如果有）：</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># firewall-cmd --permanent --add-port&#x3D;7777&#x2F;tcp</span><br><span class="line">success</span><br><span class="line"># firewall-cmd --reload</span><br><span class="line">success</span><br></pre></td></tr></table></figure>
-<p>因为泰拉瑞亚默认使用 7777 端口这里就设置为 7777，可以根据自己的需求修改。</p>
-<h2 id="创建服务器文件夹"><a href="#创建服务器文件夹" class="headerlink" title="创建服务器文件夹"></a>创建服务器文件夹</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;</span><br><span class="line"># mkdir terraria</span><br></pre></td></tr></table></figure>
-<h2 id="下载服务器文件"><a href="#下载服务器文件" class="headerlink" title="下载服务器文件"></a>下载服务器文件</h2><p>本地浏览器打开<a href="https://terraria.org/" target="_blank" rel="noopener">terraria</a>点击最下方<a href="https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631" target="_blank" rel="noopener">PC Dedicated Server</a>下载最新版服务端并解压<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521145206.png" alt=""><br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521150907.png" alt=""></p>
-<h1 id="制作一个配置文件"><a href="#制作一个配置文件" class="headerlink" title="制作一个配置文件"></a>制作一个配置文件</h1><p>在本地新建 serverconfig.txt<br>文件内容如下<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521151106.png" alt=""></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">world&#x3D;&#x2F;opt&#x2F;terraria&#x2F;Worlds&#x2F;世界的名字.wld   地图存档路径</span><br><span class="line">autocreate&#x3D;3    世界大小 1小、 2 大、 3 超大</span><br><span class="line">worldname&#x3D;  世界的名字</span><br><span class="line">difficulty&#x3D;0    难度：0(普通)，1(专家)</span><br><span class="line">maxplayers&#x3D;4    最大玩家数</span><br><span class="line">password&#x3D;   设定一个密码(无密码留空)</span><br><span class="line">worldpath&#x3D;&#x2F;opt&#x2F;terraria&#x2F;Worlds  地图保存路径</span><br></pre></td></tr></table></figure>
-
-<h2 id="将服务端跟配置上传至服务器"><a href="#将服务端跟配置上传至服务器" class="headerlink" title="将服务端跟配置上传至服务器"></a>将服务端跟配置上传至服务器</h2><div class="note info">
-            <p>FlashFXP连接至主机方法不再赘述 具体请<a href="https://www.baidu.com" target="_blank" rel="noopener">百度一下</a></p>
-          </div>
-
-<p>文件全选直接拖动到服务器目录就好了<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521152245.png" alt=""></p>
-<h2 id="创建个窗口"><a href="#创建个窗口" class="headerlink" title="创建个窗口"></a>创建个窗口</h2><p>用<code>screen</code>创建一个名叫terr的窗口 使服务器能在后台运行</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">screen -S terr</span><br></pre></td></tr></table></figure>
-<div class="note info">
-            <p>screen相当于windows的窗口 放到后台不会因为关闭xshell而把进程关闭<br>将当前窗口切换至后台<br><code>crtl</code>+<code>A</code>+<code>D</code></p><p>列出后台运行的窗口</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">screen -list</span><br></pre></td></tr></table></figure><p>重新打开后台窗口</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">screen -r 窗口名</span><br></pre></td></tr></table></figure>
-          </div>
-<h2 id="赋予服务器文件权限"><a href="#赋予服务器文件权限" class="headerlink" title="赋予服务器文件权限"></a>赋予服务器文件权限</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># chmod 777 TerrariaServer.bin.x86_64</span><br></pre></td></tr></table></figure>
-<h2 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># .&#x2F;TerrariaServer.bin.x86_64 -config &#x2F;opt&#x2F;terraria&#x2F;serverconfig.txt</span><br></pre></td></tr></table></figure>
-<p>初次运行因为要创建世界需要一定时间当看到</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Terraria Server v1.4.0.3</span><br><span class="line"> </span><br><span class="line">Listening on port 7777</span><br><span class="line">Type &#39;help&#39; for a list of commands.</span><br><span class="line"> </span><br><span class="line">:</span><br></pre></td></tr></table></figure>
-<p>表示生成成功！</p>
-<p>此时可以在游戏的多人模式通过 IP 进入游戏看看是否成功。</p>
-<h2 id="确认成功后退出服务器"><a href="#确认成功后退出服务器" class="headerlink" title="确认成功后退出服务器"></a>确认成功后退出服务器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">: exit</span><br></pre></td></tr></table></figure>
-<p>重新编辑配置文件防止重新生成世界</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># vi serverconfig.txt</span><br></pre></td></tr></table></figure>
-<p>将三个配置失效掉</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">autocreate&#x3D;2</span><br><span class="line">worldname&#x3D;世界的名字</span><br><span class="line">difficulty&#x3D;1</span><br></pre></td></tr></table></figure>
-<p>改为</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># autocreate&#x3D;2</span><br><span class="line"># worldname&#x3D;Terraria</span><br><span class="line"># difficulty&#x3D;1</span><br></pre></td></tr></table></figure>
-
-<h2 id="重新打开服务器"><a href="#重新打开服务器" class="headerlink" title="重新打开服务器"></a>重新打开服务器</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># .&#x2F;TerrariaServer.bin.x86_64 -config &#x2F;opt&#x2F;terraria&#x2F;serverconfig.txt</span><br></pre></td></tr></table></figure>
-
-<h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>成功后按<code>crtl</code>+<code>A</code>+<code>D</code>将此窗口切换至后台</p>
-<p>通过<code>screen -ls</code>确认下是否开启了窗口</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># screen -list</span><br><span class="line">There is a screen on:</span><br><span class="line">	526.terr	(05&#x2F;20&#x2F;20 10:40:14)	(Detached)</span><br><span class="line">1 Socket in &#x2F;run&#x2F;screen&#x2F;S-root.</span><br></pre></td></tr></table></figure>
-<p>出现刚才创建的窗口的话就可以愉快的玩耍了</p>
-<h1 id="制作一个自动启动的脚本"><a href="#制作一个自动启动的脚本" class="headerlink" title="制作一个自动启动的脚本"></a>制作一个自动启动的脚本</h1><p><a href="https://www.wikimoe.com/?post=138" target="_blank" rel="noopener">参考文献</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 谷歌云 </tag>
+            
+            <tag> GCP </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> server </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建泰拉瑞亚(Terraria)1.4.0.2服务器</title>
+      <link href="/posts/50811/"/>
+      <url>/posts/50811/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info">            <p>准备一台 VPS：<br>首先需要准备一台 VPS。<br>我的VPS配置如下：<br>CPU：2核<br>内存：2G<br>带宽：2M以上<br>当然以上配置全部是 1 也是能跑，就是可能会很慢或者游戏途中掉线。</p>          </div><h1 id="设置SWAP"><a href="#设置SWAP" class="headerlink" title="设置SWAP"></a>设置SWAP</h1><p>防止因为内存不足导致游戏被强迫关闭<br>有些vps会默认给一些SWAP有些则不给，如果SWAP不够的话推荐增加一些以保证进程不被关闭。</p><p>确认下SWAP设置了多少</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure><p>如果足够1GB则跳过这一步直接开始搭建游戏！</p><h2 id="删除-SWAP-分区"><a href="#删除-SWAP-分区" class="headerlink" title="删除 SWAP 分区"></a>删除 SWAP 分区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure><h2 id="新增-SWAP-分区"><a href="#新增-SWAP-分区" class="headerlink" title="新增 SWAP 分区"></a>新增 SWAP 分区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;root&#x2F;swapfile bs&#x3D;1M count&#x3D;1024</span><br></pre></td></tr></table></figure><h2 id="格式化交换分区文件"><a href="#格式化交换分区文件" class="headerlink" title="格式化交换分区文件"></a>格式化交换分区文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkswap &#x2F;root&#x2F;swapfile</span><br></pre></td></tr></table></figure><h2 id="添加开机启动"><a href="#添加开机启动" class="headerlink" title="添加开机启动"></a>添加开机启动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure><p>添加或修改</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;root&#x2F;swapfile swap swap defaults 0 0</span><br></pre></td></tr></table></figure><div class="note info">            <p>进入文本后按键盘上的 insert 按钮开始编辑，按 esc 退出编辑，输入: wq 保存并退出</p>          </div><h2 id="重启查看否生效"><a href="#重启查看否生效" class="headerlink" title="重启查看否生效"></a>重启查看否生效</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure><p>重启后输入指令查看下 SWAP 是否增加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure><h1 id="开始搭建服务器"><a href="#开始搭建服务器" class="headerlink" title="开始搭建服务器"></a>开始搭建服务器</h1><div class="note info">            <p>这里我选用的系统是 Debian GNU/Linux 10 (buster) 搭建</p><p>在系统安装完毕后使用 Xshell 登录 VPS。跟FlashFXP上传文件<br>（这里以自己的本地电脑是 Windows 为例）</p><p>Xshell 下载地址：<a href="https://www.netsarang.com/zh/xshell/" target="_blank" rel="noopener">https://www.netsarang.com/zh/xshell/</a><br>Xshell 的具体使用方法这里省略，具体可以在网上搜索教程，不难的。</p>          </div><h2 id="登录-root-账户后输入"><a href="#登录-root-账户后输入" class="headerlink" title="登录 root 账户后输入"></a>登录 root 账户后输入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get install yum -y</span><br><span class="line">apt-get install wget -y</span><br><span class="line">apt-get install screen -y</span><br></pre></td></tr></table></figure><h2 id="防火墙设置（如果有）："><a href="#防火墙设置（如果有）：" class="headerlink" title="防火墙设置（如果有）："></a>防火墙设置（如果有）：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># firewall-cmd --permanent --add-port&#x3D;7777&#x2F;tcp</span><br><span class="line">success</span><br><span class="line"># firewall-cmd --reload</span><br><span class="line">success</span><br></pre></td></tr></table></figure><p>因为泰拉瑞亚默认使用 7777 端口这里就设置为 7777，可以根据自己的需求修改。</p><h2 id="创建服务器文件夹"><a href="#创建服务器文件夹" class="headerlink" title="创建服务器文件夹"></a>创建服务器文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;</span><br><span class="line"># mkdir terraria</span><br></pre></td></tr></table></figure><h2 id="下载服务器文件"><a href="#下载服务器文件" class="headerlink" title="下载服务器文件"></a>下载服务器文件</h2><p>本地浏览器打开<a href="https://terraria.org/" target="_blank" rel="noopener">terraria</a>点击最下方<a href="https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631" target="_blank" rel="noopener">PC Dedicated Server</a>下载最新版服务端并解压<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521145206.png" alt=""><br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521150907.png" alt=""></p><h1 id="制作一个配置文件"><a href="#制作一个配置文件" class="headerlink" title="制作一个配置文件"></a>制作一个配置文件</h1><p>在本地新建 serverconfig.txt<br>文件内容如下<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521151106.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">world&#x3D;&#x2F;opt&#x2F;terraria&#x2F;Worlds&#x2F;世界的名字.wld   地图存档路径</span><br><span class="line">autocreate&#x3D;3    世界大小 1小、 2 大、 3 超大</span><br><span class="line">worldname&#x3D;  世界的名字</span><br><span class="line">difficulty&#x3D;0    难度：0(普通)，1(专家)</span><br><span class="line">maxplayers&#x3D;4    最大玩家数</span><br><span class="line">password&#x3D;   设定一个密码(无密码留空)</span><br><span class="line">worldpath&#x3D;&#x2F;opt&#x2F;terraria&#x2F;Worlds  地图保存路径</span><br></pre></td></tr></table></figure><h2 id="将服务端跟配置上传至服务器"><a href="#将服务端跟配置上传至服务器" class="headerlink" title="将服务端跟配置上传至服务器"></a>将服务端跟配置上传至服务器</h2><div class="note info">            <p>FlashFXP连接至主机方法不再赘述 具体请<a href="https://www.baidu.com" target="_blank" rel="noopener">百度一下</a></p>          </div><p>文件全选直接拖动到服务器目录就好了<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/belial-beast/blogtc/img/20200521152245.png" alt=""></p><h2 id="创建个窗口"><a href="#创建个窗口" class="headerlink" title="创建个窗口"></a>创建个窗口</h2><p>用<code>screen</code>创建一个名叫terr的窗口 使服务器能在后台运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S terr</span><br></pre></td></tr></table></figure><div class="note info">            <p>screen相当于windows的窗口 放到后台不会因为关闭xshell而把进程关闭<br>将当前窗口切换至后台<br><code>crtl</code>+<code>A</code>+<code>D</code></p><p>列出后台运行的窗口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -list</span><br></pre></td></tr></table></figure><p>重新打开后台窗口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -r 窗口名</span><br></pre></td></tr></table></figure>          </div><h2 id="赋予服务器文件权限"><a href="#赋予服务器文件权限" class="headerlink" title="赋予服务器文件权限"></a>赋予服务器文件权限</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># chmod 777 TerrariaServer.bin.x86_64</span><br></pre></td></tr></table></figure><h2 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># .&#x2F;TerrariaServer.bin.x86_64 -config &#x2F;opt&#x2F;terraria&#x2F;serverconfig.txt</span><br></pre></td></tr></table></figure><p>初次运行因为要创建世界需要一定时间当看到</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Terraria Server v1.4.0.3</span><br><span class="line"> </span><br><span class="line">Listening on port 7777</span><br><span class="line">Type &#39;help&#39; for a list of commands.</span><br><span class="line"> </span><br><span class="line">:</span><br></pre></td></tr></table></figure><p>表示生成成功！</p><p>此时可以在游戏的多人模式通过 IP 进入游戏看看是否成功。</p><h2 id="确认成功后退出服务器"><a href="#确认成功后退出服务器" class="headerlink" title="确认成功后退出服务器"></a>确认成功后退出服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">: exit</span><br></pre></td></tr></table></figure><p>重新编辑配置文件防止重新生成世界</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># vi serverconfig.txt</span><br></pre></td></tr></table></figure><p>将三个配置失效掉</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">autocreate&#x3D;2</span><br><span class="line">worldname&#x3D;世界的名字</span><br><span class="line">difficulty&#x3D;1</span><br></pre></td></tr></table></figure><p>改为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># autocreate&#x3D;2</span><br><span class="line"># worldname&#x3D;Terraria</span><br><span class="line"># difficulty&#x3D;1</span><br></pre></td></tr></table></figure><h2 id="重新打开服务器"><a href="#重新打开服务器" class="headerlink" title="重新打开服务器"></a>重新打开服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd &#x2F;opt&#x2F;terraria</span><br><span class="line"># .&#x2F;TerrariaServer.bin.x86_64 -config &#x2F;opt&#x2F;terraria&#x2F;serverconfig.txt</span><br></pre></td></tr></table></figure><h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2><p>成功后按<code>crtl</code>+<code>A</code>+<code>D</code>将此窗口切换至后台</p><p>通过<code>screen -ls</code>确认下是否开启了窗口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># screen -list</span><br><span class="line">There is a screen on:</span><br><span class="line">526.terr(05&#x2F;20&#x2F;20 10:40:14)(Detached)</span><br><span class="line">1 Socket in &#x2F;run&#x2F;screen&#x2F;S-root.</span><br></pre></td></tr></table></figure><p>出现刚才创建的窗口的话就可以愉快的玩耍了</p><h1 id="制作一个自动启动的脚本"><a href="#制作一个自动启动的脚本" class="headerlink" title="制作一个自动启动的脚本"></a>制作一个自动启动的脚本</h1><p><a href="https://www.wikimoe.com/?post=138" target="_blank" rel="noopener">参考文献</a></p>]]></content>
+      
+      
       <categories>
-        <category>服务器</category>
-        <category>泰拉瑞亚</category>
+          
+          <category> 服务器 </category>
+          
+          <category> 泰拉瑞亚 </category>
+          
       </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>泰拉瑞亚</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OneDriveTest</title>
-    <url>/posts/62162/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://storage.live.com/items/BF61C4FE558FA652!3308?authkey=AKpaeURCrBiL48Y" alt="f616ec16-e33d-4597-985f-3cbba17e5bc5.jpg"></p>
-
-    <div id="aplayer-dSzklVSH" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="4969510655" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ff0000"
-    ></div>
-
-<p><video><source src="http://192.168.1.30/?/Video/%E6%9C%80%E6%96%B0%E5%8F%AF%E7%94%A8Gmail%E8%B0%B7%E6%AD%8CGoogle%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%E6%96%B9%E6%B3%95%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%BE%97%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%E7%94%A8%E4%BA%8E%E8%B0%B7%E6%AD%8C%E9%98%BF%E9%87%8C%E4%BA%91%E7%AD%89%E9%80%9A%E8%BF%87Gmail%E6%89%8B%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81.mp4" type="video/mp4"></video></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>ValineTest</title>
-    <url>/posts/2520/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> 泰拉瑞亚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OneDriveTest</title>
+      <link href="/posts/62162/"/>
+      <url>/posts/62162/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://storage.live.com/items/BF61C4FE558FA652!3308?authkey=AKpaeURCrBiL48Y" alt="f616ec16-e33d-4597-985f-3cbba17e5bc5.jpg"></p>    <div id="aplayer-dSzklVSH" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="4969510655" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ff0000"    ></div><p><video><source src="http://192.168.1.30/?/Video/%E6%9C%80%E6%96%B0%E5%8F%AF%E7%94%A8Gmail%E8%B0%B7%E6%AD%8CGoogle%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%E6%96%B9%E6%B3%95%E5%A6%82%E4%BD%95%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%BE%97%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%E7%94%A8%E4%BA%8E%E8%B0%B7%E6%AD%8C%E9%98%BF%E9%87%8C%E4%BA%91%E7%AD%89%E9%80%9A%E8%BF%87Gmail%E6%89%8B%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81.mp4" type="video/mp4"></video></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ValineTest</title>
+      <link href="/posts/2520/"/>
+      <url>/posts/2520/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试 密码:123456</title>
-    <url>/posts/7308/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">不给看！气不气！气不气！气不气！</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="af6bf013f7ba7fc3f55303669d1f02e419ef67b423890c5acdb8f8324f4e5e83">04b96cf03f1b5d00286d72390b6bf2e0817acbfddb7147d2fcc01912c7f5c0f9713c9c317ba53b9347fde83c930f8c77af411014f8ec84eef7465f6027f6e56361da453a696c51ea2cf726ce74f4d1f870ba487ed6f2d242104af5c0877116b7f14bfb7a90c5973d12ee403d2035f9933239ae2447ed66790333bdf54ffb591262e25fa12dbcf137d44c19a6cd948ebafb15e73fa6eff6dc060b9040f5fe74ceda47dc32b97d576023487f051b3ba548d6ba50e2b500f2040aef18f59839ab6e1e75f19b19b2197541d212a3b8a50be74d4dcb775f19746dc5f65bb1d14038106d809a8f516785e6e320975209525d369518b3e93b5bec268679dda1396e30afe69c8f882a0bd5eacf54f501c1e3d2ec8b226fcc39bebea8c891987b771189e021111ef29f592a8ed69740d304f3c964b2e146badf4fb81467d43741b13987551dbd944bd0854107efa7cd37427e3bbdcc4ee9601bb4005e1dc329f4f3d215b93b0cd84eaf5e11f43ea5387dea1cd66226f0017c8c66886445478d043e07f0b5b17ca8684a6332d207d1e639f4ad021a6edc8b534de0da51b300e9adb424d33d11f72314086a9fc346f09419a2f5b7c9a85ee0715913df29792fafd4c94752bb66759e86361acda1fc1119cdfe5df6efeb7318f4b24ddc931386e96f81c1e1d8cd947eb5b0a0f9b64aafccbc294a07024417a835d7ccf589cd412a113d880bb44e092160ec4b64b5eb9983cdcb4acc217be2fa2bb8d80b30feb2f97b014ff9eeea1a01411147ff3349c1247b4cfa970b24ae392350867bb0d5d9a88b485375467ee4c7fe48a04ee5bfab26050fa42f3b366dfc3a4509336366dc37db2575fb15b3ba737e3f00d6f3e92a6e0be70906cf4095576d1d7467be44665eb0207ea549dacbc209cb0e0adf78b4eed703afa4909aa7d93f4f64adcd5ad3b46bdd3b43a6d566aeb72742b9936d407818f52597968dba3238c81d520f352ab20c099ca3a612e4df92593f4d26aa69146afa204cf7be73bdb2d68dbadaa7a6c12bf5ce5c79cede8b0784b9efa1f2bd9bbbd04d63cbe02ce06626b3499464f813546f6c46692d2ccb84d04e2bb19cdaa79ecdef1841e80e2899e726f8ae0ee479584beafe2c4ff719bfb71db301fd922414e5c9ab5c988d6cff8783996f04ee6b1354881b3ec18af1cba8f7f75f12211f92d82a946e9a3fa135646e0de7b425946fca8d2cde3d2eed781152716c655ca7760facd19f1cb491a245003bd7886aa8c401ca19e3fddfdd19f4d3d22371cadfffc0fe2da0c1ae6b3d6db3b11ceec6fb9319784de94ee86bd7edc747130319098b8018327dbaf4dd50df4f0b3cd8459d8c1153a0a087b88c4987b0ee7ac4309bfd49e7b98f836c0aebff9675a8b11e37b6be7df7b5b90ad45c67d8486d3c6059d494c197c1fae102087c0f494a1662b42d63848e5a57fc8d5d419026b5838df9c315b2548d7384bcf07a29544fd9c8f91823003849cd710c01a6d2aef85a8fd37a5ef50059592e91085fc411a8057803fb0d07568738989ef1c92a2dcb8a97267893c4561fb71eff015a8c3166a78feee71b0094b4e9feb865b21fc943f63e9cd4b139c789</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>加密测试 密码:123456</title>
+      <link href="/posts/7308/"/>
+      <url>/posts/7308/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">不给看！气不气！气不气！气不气！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="af6bf013f7ba7fc3f55303669d1f02e419ef67b423890c5acdb8f8324f4e5e83">04b96cf03f1b5d00286d72390b6bf2e0817acbfddb7147d2fcc01912c7f5c0f9713c9c317ba53b9347fde83c930f8c77af411014f8ec84eef7465f6027f6e56361da453a696c51ea2cf726ce74f4d1f870ba487ed6f2d242104af5c0877116b7f14bfb7a90c5973d12ee403d2035f9933239ae2447ed66790333bdf54ffb591262e25fa12dbcf137d44c19a6cd948ebafb15e73fa6eff6dc060b9040f5fe74ceda47dc32b97d576023487f051b3ba548d6ba50e2b500f2040aef18f59839ab6e1e75f19b19b2197541d212a3b8a50be74d4dcb775f19746dc5f65bb1d14038106d809a8f516785e6e320975209525d369518b3e93b5bec268679dda1396e30afe69c8f882a0bd5eacf54f501c1e3d2ec8b226fcc39bebea8c891987b771189e021111ef29f592a8ed69740d304f3c964b2e146badf4fb81467d43741b13987551dbd944bd0854107efa7cd37427e3bbdcc4ee9601bb4005e1dc329f4f3d215b93b0cd84eaf5e11f43ea5387dea1cd66226f0017c8c66886445478d043e07f0b5b17ca8684a6332d207d1e639f4ad021a6edc8b534de0da51b300e9adb424d33d11f72314086a9fc346f09419a2f5b7c9a85ee0715913df29792fafd4c94752bb66759e86361acda1fc1119cdfe5df6efeb7318f4b24ddc931386e96f81c1e1d8cd947eb5b0a0f9b64aafccbc294a07024417a835d7ccf589cd412a113d880bb44e092160ec4b64b5eb9983cdcb4acc217be2fa2bb8d80b30feb2f97b014ff9eeea1a01411147ff3349c1247b4cfa970b24ae392350867bb0d5d9a88b485375467ee4c7fe48a04ee5bfab26050fa42f3b366dfc3a4509336366dc37db2575fb15b3ba737e3f00d6f3e92a6e0be70906cf4095576d1d7467be44665eb0207ea549dacbc209cb0e0adf78b4eed703afa4909aa7d93f4f64adcd5ad3b46bdd3b43a6d566aeb72742b9936d407818f52597968dba3238c81d520f352ab20c099ca3a612e4df92593f4d26aa69146afa204cf7be73bdb2d68dbadaa7a6c12bf5ce5c79cede8b0784b9efa1f2bd9bbbd04d63cbe02ce06626b3499464f813546f6c46692d2ccb84d04e2bb19cdaa79ecdef1841e80e2899e726f8ae0ee479584beafe2c4ff719bfb71db301fd922414e5c9ab5c988d6cff8783996f04ee6b1354881b3ec18af1cba8f7f75f12211f92d82a946e9a3fa135646e0de7b425946fca8d2cde3d2eed781152716c655ca7760facd19f1cb491a245003bd7886aa8c401ca19e3fddfdd19f4d3d22371cadfffc0fe2da0c1ae6b3d6db3b11ceec6fb9319784de94ee86bd7edc747130319098b8018327dbaf4dd50df4f0b3cd8459d8c1153a0a087b88c4987b0ee7ac4309bfd49e7b98f836c0aebff9675a8b11e37b6be7df7b5b90ad45c67d8486d3c6059d494c197c1fae102087c0f494a1662b42d63848e5a57fc8d5d419026b5838df9c315b2548d7384bcf07a29544fd9c8f91823003849cd710c01a6d2aef85a8fd37a5ef50059592e91085fc411a8057803fb0d07568738989ef1c92a2dcb8a97267893c4561fb71eff015a8c3166a78feee71b0094b4e9feb865b21fc943f63e9cd4b139c789</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown</title>
-    <url>/posts/17683/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><h2 id="使用-号标记"><a href="#使用-号标记" class="headerlink" title="使用#号标记"></a>使用#号标记</h2><p>使用 <em>#</em> 号可表示1-6 级标题，一级标题对应一个 <em>#</em> 号，二级标题对应两个 <em>#</em> 号，以此类推。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 	一级标题</span><br><span class="line">## 	二级标题</span><br><span class="line">### 	三级标题</span><br><span class="line">#### 	四级标题</span><br><span class="line">##### 	五级标题</span><br><span class="line">###### 	六级标题</span><br></pre></td></tr></table></figure>
-
-<h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><p>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
-<h1 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
-<p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong></p>
-<h1 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">----------</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">RUNOOB.COM</span><br><span class="line">GOOGLE.COM</span><br><span class="line">~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
-<p>RUNOOB.COM<br>GOOGLE.COM<br><del>BAIDU.COM</del></p>
-<h1 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h1><p>下划线可以通过 HTML 的 ＜u＞ 标签来实现：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
-<p><u>带下划线文本</u></p>
-<h1 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h1><p>Markdown 支持有序列表和无序列表。<br>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure>
-<ul>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ul>
-<ul>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ul>
-<ul>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ul>
-<p>有序列表使用数字并加上 . 号来表示，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br></pre></td></tr></table></figure>
-<ol>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ol>
-<h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
-<ol>
-<li>第一项：<ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第二项：<ul>
-<li>第二项嵌套的第一个元素</li>
-<li>第二项嵌套的第二个元素</li>
-</ul>
-</li>
-</ol>
-<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><h2 id="Markdown-区块引用"><a href="#Markdown-区块引用" class="headerlink" title="Markdown 区块引用"></a>Markdown 区块引用</h2><p>在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 菜鸟教程</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>区块引用<br>菜鸟教程<br>学的不仅是技术更是梦想</p>
-</blockquote>
-<h2 id="区块嵌套，"><a href="#区块嵌套，" class="headerlink" title="区块嵌套，"></a>区块嵌套，</h2><p>一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>最外层</p>
-<blockquote>
-<p>第一层嵌套</p>
-<blockquote>
-<p>第二层嵌套</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 区块中使用列表</span><br><span class="line">&gt; 1. 第一项</span><br><span class="line">&gt; 2. 第二项</span><br><span class="line">&gt; + 第一项</span><br><span class="line">&gt; + 第二项</span><br><span class="line">&gt; + 第三项</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>区块中使用列表</p>
-<ol>
-<li>第一项</li>
-<li>第二项</li>
-</ol>
-<ul>
-<li>第一项</li>
-<li>第二项</li>
-<li>第三项</li>
-</ul>
-</blockquote>
-<h2 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">* 第二项</span><br></pre></td></tr></table></figure>
-<ul>
-<li>第一项<blockquote>
-<p>菜鸟教程<br>学的不仅是技术更是梦想</p>
-</blockquote>
-</li>
-<li>第二项</li>
-</ul>
-<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接使用方法如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line"></span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
-<p><a href="https://命运2.网址" target="_blank" rel="noopener">命运2.网址</a></p>
-<p><a href="https://命运2.网址" target="_blank" rel="noopener">https://命运2.网址</a></p>
-<h2 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h2><pre><code>这个链接用 1 作为网址变量 [Google][1]
-这个链接用 runoob 作为网址变量 [Runoob][runoob]
-然后在文档的结尾为变量赋值（网址）
-
-[1]: http://www.google.com/
-[runoob]: http://www.runoob.com/</code></pre><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
-<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>开头一个感叹号 !</li>
-<li>接着一个方括号，里面放上图片的替代文字</li>
-<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
-</ul>
-<p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签<br>    <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="http://static.runoob.com/images/runoob-logo.png" width="50%"></p>
-<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><h2 id="Markdown-表格-1"><a href="#Markdown-表格-1" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><p>使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
-<p>语法格式如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
-<h2 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h2><p>我们可以设置表格的对齐方式：</p>
-<ul>
-<li>-: 设置内容和标题栏居右对齐。</li>
-<li>:- 设置内容和标题栏居左对齐。</li>
-<li>:-: 设置内容和标题栏居中对齐。<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h1 id="消息提示框"><a href="#消息提示框" class="headerlink" title="消息提示框"></a>消息提示框</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">!&gt;(空格)文字 表示黄色警告框</span><br><span class="line">i&gt;(空格)文字 表示蓝色信息框</span><br><span class="line">@&gt;(空格)文字 表示银色引用框</span><br><span class="line">x&gt;(空格)文字 表示红色错误框</span><br><span class="line">√&gt;(空格)文字 表示绿色成功框</span><br></pre></td></tr></table></figure>
-<p>!&gt;(空格)文字 表示黄色警告框<br>i&gt;(空格)文字 表示蓝色信息框<br>@&gt;(空格)文字 表示银色引用框<br>x&gt;(空格)文字 表示红色错误框<br>√&gt;(空格)文字 表示绿色成功框</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown</title>
+      <link href="/posts/17683/"/>
+      <url>/posts/17683/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h1><h2 id="使用-号标记"><a href="#使用-号标记" class="headerlink" title="使用#号标记"></a>使用#号标记</h2><p>使用 <em>#</em> 号可表示1-6 级标题，一级标题对应一个 <em>#</em> 号，二级标题对应两个 <em>#</em> 号，以此类推。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><h1 id="Markdown-段落"><a href="#Markdown-段落" class="headerlink" title="Markdown 段落"></a>Markdown 段落</h1><p>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。也可以在段落后面使用一个空行来表示重新开始一个段落。</p><h1 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure><p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong></p><h1 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">----------</span><br></pre></td></tr></table></figure><hr><h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RUNOOB.COM</span><br><span class="line">GOOGLE.COM</span><br><span class="line">~~BAIDU.COM~~</span><br></pre></td></tr></table></figure><p>RUNOOB.COM<br>GOOGLE.COM<br><del>BAIDU.COM</del></p><h1 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h1><p>下划线可以通过 HTML 的 ＜u＞ 标签来实现：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure><p><u>带下划线文本</u></p><h1 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h1><p>Markdown 支持有序列表和无序列表。<br>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul><p>有序列表使用数字并加上 . 号来表示，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br></pre></td></tr></table></figure><ol><li>第一项</li><li>第二项</li><li>第三项</li></ol><h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure><ol><li>第一项：<ul><li>第一项嵌套的第一个元素</li><li>第一项嵌套的第二个元素</li></ul></li><li>第二项：<ul><li>第二项嵌套的第一个元素</li><li>第二项嵌套的第二个元素</li></ul></li></ol><h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><h2 id="Markdown-区块引用"><a href="#Markdown-区块引用" class="headerlink" title="Markdown 区块引用"></a>Markdown 区块引用</h2><p>在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 菜鸟教程</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br></pre></td></tr></table></figure><blockquote><p>区块引用<br>菜鸟教程<br>学的不仅是技术更是梦想</p></blockquote><h2 id="区块嵌套，"><a href="#区块嵌套，" class="headerlink" title="区块嵌套，"></a>区块嵌套，</h2><p>一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure><blockquote><p>最外层</p><blockquote><p>第一层嵌套</p><blockquote><p>第二层嵌套</p></blockquote></blockquote></blockquote><h2 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; 区块中使用列表</span><br><span class="line">&gt; 1. 第一项</span><br><span class="line">&gt; 2. 第二项</span><br><span class="line">&gt; + 第一项</span><br><span class="line">&gt; + 第二项</span><br><span class="line">&gt; + 第三项</span><br></pre></td></tr></table></figure><blockquote><p>区块中使用列表</p><ol><li>第一项</li><li>第二项</li></ol><ul><li>第一项</li><li>第二项</li><li>第三项</li></ul></blockquote><h2 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">* 第二项</span><br></pre></td></tr></table></figure><ul><li>第一项<blockquote><p>菜鸟教程<br>学的不仅是技术更是梦想</p></blockquote></li><li>第二项</li></ul><h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接使用方法如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line"></span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure><p><a href="https://命运2.网址" target="_blank" rel="noopener">命运2.网址</a></p><p><a href="https://命运2.网址" target="_blank" rel="noopener">https://命运2.网址</a></p><h2 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h2><pre><code>这个链接用 1 作为网址变量 [Google][1]这个链接用 runoob 作为网址变量 [Runoob][runoob]然后在文档的结尾为变量赋值（网址）[1]: http://www.google.com/[runoob]: http://www.runoob.com/</code></pre><p>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p><h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure><ul><li>开头一个感叹号 !</li><li>接着一个方括号，里面放上图片的替代文字</li><li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li></ul><p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签<br>    <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="http://static.runoob.com/images/runoob-logo.png" width="50%"></p><h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><h2 id="Markdown-表格-1"><a href="#Markdown-表格-1" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><p>使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p><p>语法格式如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure><h2 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h2><p>我们可以设置表格的对齐方式：</p><ul><li>-: 设置内容和标题栏居右对齐。</li><li>:- 设置内容和标题栏居左对齐。</li><li>:-: 设置内容和标题栏居中对齐。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure><table><thead><tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中对齐</th></tr></thead><tbody><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr></tbody></table></li></ul><h1 id="消息提示框"><a href="#消息提示框" class="headerlink" title="消息提示框"></a>消息提示框</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">!&gt;(空格)文字 表示黄色警告框</span><br><span class="line">i&gt;(空格)文字 表示蓝色信息框</span><br><span class="line">@&gt;(空格)文字 表示银色引用框</span><br><span class="line">x&gt;(空格)文字 表示红色错误框</span><br><span class="line">√&gt;(空格)文字 表示绿色成功框</span><br></pre></td></tr></table></figure><p>!&gt;(空格)文字 表示黄色警告框<br>i&gt;(空格)文字 表示蓝色信息框<br>@&gt;(空格)文字 表示银色引用框<br>x&gt;(空格)文字 表示红色错误框<br>√&gt;(空格)文字 表示绿色成功框</p>]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>笔记</title>
-    <url>/posts/8022/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="发布前提"><a href="#发布前提" class="headerlink" title="发布前提"></a>发布前提</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top_img: (除非特定需要，可以不寫)</span><br><span class="line">comments  是否顯示評論(除非設置<span class="literal">false</span>,可以不寫)</span><br><span class="line">cover:  縮略圖</span><br><span class="line">toc:  是否顯示toc (除非特定文章設置，可以不寫)</span><br><span class="line">toc_number: 是否顯示toc數字 (除非特定文章設置，可以不寫)</span><br><span class="line">copyright: 是否顯示版權 (除非特定文章設置，可以不寫)</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">hide:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><p>1.你要在文章的front-matter区域里添加top: True属性来放入这篇文章置顶。<br>2.你可以参考hexo-generator-index-pin-top这个仓库来了解更多细节。</p>
-<p>举个例子：</p>
-<pre><code>你的某篇文章开头如下：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: xxxx</span><br><span class="line">tags:</span><br><span class="line">  - xxx</span><br><span class="line">date: 2018-08-08 08:08:08</span><br><span class="line">---</span><br><span class="line">// ....</span><br></pre></td></tr></table></figure>
-
-<pre><code>现在把top: True加进去：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: xxxx</span><br><span class="line">tags:</span><br><span class="line">  - xxx</span><br><span class="line">date: 2018-08-08 08:08:08</span><br><span class="line">top: True</span><br><span class="line">---</span><br><span class="line">// ....</span><br></pre></td></tr></table></figure>
-
-<h1 id="文章隐藏"><a href="#文章隐藏" class="headerlink" title="文章隐藏"></a>文章隐藏</h1><p>1.如果想要隐藏文章，可以在文章的Front-matter添加</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hide: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<h1 id="为特定的文章配置是否显示TOC和特定的目录章节数字"><a href="#为特定的文章配置是否显示TOC和特定的目录章节数字" class="headerlink" title="为特定的文章配置是否显示TOC和特定的目录章节数字"></a>为特定的文章配置是否显示TOC和特定的目录章节数字</h1><p>你在文章的md文件的头部，加入toc_number状语从句：toc项，配置并true或者false即可。</p>
-<p>toc是否显示文章TOC</p>
-<p>toc_number 是否显示章节数</p>
-<p>配置之后你的特定的文章将会拥有它自己的目录数字的显示与否，而不会受累的配置影响。</p>
-<h1 id="外挂标签"><a href="#外挂标签" class="headerlink" title="外挂标签"></a>外挂标签</h1><pre><code>标签外挂是Hexo独有的功能，并非标准的Markdown格式
-用法</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : Disable icon <span class="keyword">in</span> note.</span><br><span class="line"></span><br><span class="line">All parameters are optional.</span><br></pre></td></tr></table></figure>
-<pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233145.png" alt="标签"></p>
-<h1 id="版权"><a href="#版权" class="headerlink" title="版权"></a>版权</h1><p>转载文章不需要显示版权</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">copyright: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="画廊相册图库"><a href="#画廊相册图库" class="headerlink" title="画廊相册图库"></a>画廊相册图库</h1><pre><code>一个图库集合。
-写法</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;div class=<span class="string">"gallery-group-main"</span>&gt;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>name：图库名字</p>
-</li>
-<li><p>description：图库描述</p>
-</li>
-<li><p>link：连接到对应相册的地址</p>
-</li>
-<li><p>img-url：图库封面的地址</p>
-<p> 例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;div class=<span class="string">"gallery-group-main"</span>&gt;</span><br><span class="line">&#123;% galleryGroup <span class="string">'壁紙'</span> <span class="string">'收藏的一些壁紙'</span> <span class="string">'/Gallery/wallpaper'</span> https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'漫威'</span> <span class="string">'關於漫威的圖片'</span> <span class="string">'/Gallery/marvel'</span> https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'OH MY GIRL'</span> <span class="string">'關於OH MY GIRL的圖片'</span> <span class="string">'/Gallery/ohmygirl'</span> https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191226003414.png" alt="图库"></p>
-</li>
-</ol>
-<h1 id="画廊相册"><a href="#画廊相册" class="headerlink" title="画廊相册"></a>画廊相册</h1><pre><code>写法：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 圖片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
-
-<pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-scary-pumpkin-hand-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-fresh-fish-dinner-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-mountain-cloud-landscape-900x600.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/iphone-free-stock-photos-2210x3315.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/young-millennial-girl-drinking-lemonade-and-overlooking-the-city-2210x1473.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/modern-graphic-designer-essentials_free_stock_photos_picjumbo_HNCK4919-2210x1474.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191101143214.png" alt="图片"></p>
-<pre><code># 隐藏标签
-如果你想把一些文字，内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。
-
-写法：
-
-inline 在文本里面添加按钮隐藏内容，只限文字
-
-（content不能包含当引号，可用&amp;apos;）</code></pre><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% hideInline content,display,<span class="built_in">bg</span>,color %&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>content：文本内容</p>
-</li>
-<li><p>display：按钮显示的文字（任选）</p>
-</li>
-<li><p>bg：按钮的背景颜色（任选）</p>
-</li>
-<li><p>color：按钮文字的颜色（任选）</p>
-<p> block独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% hideBlock display,<span class="built_in">bg</span>,color %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>content：文本内容</p>
-</li>
-<li><p>display：按钮显示的文字（任选）</p>
-</li>
-<li><p>bg：按钮的背景颜色（任选）</p>
-</li>
-<li><p>color：按钮文字的颜色（任选）</p>
-<p> 例如：inline</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哪個英文字母最酷？ &#123;% hideInline 因為西裝褲(C裝酷),查看答案,<span class="comment">#FF7242,#fff %&#125;</span></span><br><span class="line"></span><br><span class="line">門裏站着一個人? &#123;% hideInline 閃 %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tag-hide-inline.gif" alt="图片"></p>
-<p> 例如：block</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% hideBlock 查看答案 %&#125;</span><br><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-tag-hide-block.gif" alt="图片"></p>
-</li>
-</ol>
-<h1 id="steam游戏"><a href="#steam游戏" class="headerlink" title="steam游戏"></a>steam游戏</h1><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul>
-<li>嵌入单个游戏<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% steamgame appid description %&#125;</span><br></pre></td></tr></table></figure></li>
-<li>批量嵌入游戏<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% steamgames %&#125;</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">&#123;% endsteamgames %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2>  appid: Steam 游戏 id.<br>  description(可选): 用于替换默认游戏简介。<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% steamgame 1057090 %&#125;</span><br></pre></td></tr></table></figure>
-<iframe src="https://store.steampowered.com/widget/1057090/" frameborder="0" width="100%" height="190"></iframe>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% steamgame 1057090 &quot;I like it.&quot; %&#125;</span><br></pre></td></tr></table></figure>
-<iframe src="https://store.steampowered.com/widget/1057090/?t=I like it." frameborder="0" width="100%" height="190"></iframe>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% steamgames %&#125;</span><br><span class="line">261570</span><br><span class="line">1057090</span><br><span class="line">&#123;% endsteamgames %&#125;</span><br></pre></td></tr></table></figure>
-<iframe src="https://store.steampowered.com/widget/261570/" frameborder="0" width="100%" height="190"></iframe><iframe src="https://store.steampowered.com/widget/1057090/" frameborder="0" width="100%" height="190"></iframe>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><a href="https://github.com/HCLonely/hexo-tag-steamgame/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a></li>
-</ul>
-<h1 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h1><p>使用<br>    
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found ([picture_url,)");
-			</script></p>
-<h2 id="标签参数"><a href="#标签参数" class="headerlink" title="标签参数"></a>标签参数</h2><ul>
-<li>title : 曲目标题</li>
-<li>author: 曲目作者</li>
-<li>url: 音乐文件 URL 地址</li>
-<li>picture_url: (可选) 音乐对应的图片地址</li>
-<li>narrow: （可选）播放器袖珍风格</li>
-<li>autoplay: (可选) 自动播放，移动端浏览器暂时不支持此功能</li>
-<li>width:xxx: (可选) 播放器宽度 (默认: 100%)</li>
-<li>lrc:xxx: （可选）歌词文件 URL 地址</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>
-
-        <div id="aplayer-yHujpfDG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
-            <pre class="aplayer-lrc-content"></pre>
-        </div>
-        <script>
-          var ap = new APlayer({
-            element: document.getElementById("aplayer-yHujpfDG"),
-            narrow: false,
-            autoplay: false,
-            showlrc: false,
-            music: {
-              title: "寻",
-              author: "华晨宇",
-              url: "https://link.hhtjim.com/163/472137749.mp3",
-              pic: "http://p1.music.126.net/FvjW-zHtoAQ5__FGag_OVQ==/109951163077686047.jpg",
-              lrc: ""
-            }
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap);
-        </script>
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;2802022828&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
-
-    <div id="aplayer-USbnheNu" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="2802022828" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
-    ></div>]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>笔记</title>
+      <link href="/posts/8022/"/>
+      <url>/posts/8022/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="发布前提"><a href="#发布前提" class="headerlink" title="发布前提"></a>发布前提</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top_img: (除非特定需要，可以不寫)</span><br><span class="line">comments  是否顯示評論(除非設置<span class="literal">false</span>,可以不寫)</span><br><span class="line">cover:  縮略圖</span><br><span class="line">toc:  是否顯示toc (除非特定文章設置，可以不寫)</span><br><span class="line">toc_number: 是否顯示toc數字 (除非特定文章設置，可以不寫)</span><br><span class="line">copyright: 是否顯示版權 (除非特定文章設置，可以不寫)</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">hide:</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><p>1.你要在文章的front-matter区域里添加top: True属性来放入这篇文章置顶。<br>2.你可以参考hexo-generator-index-pin-top这个仓库来了解更多细节。</p><p>举个例子：</p><pre><code>你的某篇文章开头如下：</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: xxxx</span><br><span class="line">tags:</span><br><span class="line">  - xxx</span><br><span class="line">date: 2018-08-08 08:08:08</span><br><span class="line">---</span><br><span class="line">// ....</span><br></pre></td></tr></table></figure><pre><code>现在把top: True加进去：</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: xxxx</span><br><span class="line">tags:</span><br><span class="line">  - xxx</span><br><span class="line">date: 2018-08-08 08:08:08</span><br><span class="line">top: True</span><br><span class="line">---</span><br><span class="line">// ....</span><br></pre></td></tr></table></figure><h1 id="文章隐藏"><a href="#文章隐藏" class="headerlink" title="文章隐藏"></a>文章隐藏</h1><p>1.如果想要隐藏文章，可以在文章的Front-matter添加</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hide: <span class="literal">true</span></span><br></pre></td></tr></table></figure><h1 id="为特定的文章配置是否显示TOC和特定的目录章节数字"><a href="#为特定的文章配置是否显示TOC和特定的目录章节数字" class="headerlink" title="为特定的文章配置是否显示TOC和特定的目录章节数字"></a>为特定的文章配置是否显示TOC和特定的目录章节数字</h1><p>你在文章的md文件的头部，加入toc_number状语从句：toc项，配置并true或者false即可。</p><p>toc是否显示文章TOC</p><p>toc_number 是否显示章节数</p><p>配置之后你的特定的文章将会拥有它自己的目录数字的显示与否，而不会受累的配置影响。</p><h1 id="外挂标签"><a href="#外挂标签" class="headerlink" title="外挂标签"></a>外挂标签</h1><pre><code>标签外挂是Hexo独有的功能，并非标准的Markdown格式用法</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : Disable icon <span class="keyword">in</span> note.</span><br><span class="line"></span><br><span class="line">All parameters are optional.</span><br></pre></td></tr></table></figure><pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示塊標籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233145.png" alt="标签"></p><h1 id="版权"><a href="#版权" class="headerlink" title="版权"></a>版权</h1><p>转载文章不需要显示版权</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copyright: <span class="literal">false</span></span><br></pre></td></tr></table></figure><h1 id="画廊相册图库"><a href="#画廊相册图库" class="headerlink" title="画廊相册图库"></a>画廊相册图库</h1><pre><code>一个图库集合。写法</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"gallery-group-main"</span>&gt;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><ol><li><p>name：图库名字</p></li><li><p>description：图库描述</p></li><li><p>link：连接到对应相册的地址</p></li><li><p>img-url：图库封面的地址</p><p> 例如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"gallery-group-main"</span>&gt;</span><br><span class="line">&#123;% galleryGroup <span class="string">'壁紙'</span> <span class="string">'收藏的一些壁紙'</span> <span class="string">'/Gallery/wallpaper'</span> https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'漫威'</span> <span class="string">'關於漫威的圖片'</span> <span class="string">'/Gallery/marvel'</span> https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %&#125;</span><br><span class="line">&#123;% galleryGroup <span class="string">'OH MY GIRL'</span> <span class="string">'關於OH MY GIRL的圖片'</span> <span class="string">'/Gallery/ohmygirl'</span> https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191226003414.png" alt="图库"></p></li></ol><h1 id="画廊相册"><a href="#画廊相册" class="headerlink" title="画廊相册"></a>画廊相册</h1><pre><code>写法：</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 圖片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><pre><code>例如：</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-scary-pumpkin-hand-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-fresh-fish-dinner-900x600.jpg)</span><br><span class="line">![](https://gratisography.com/wp-content/uploads/2019/10/gratisography-mountain-cloud-landscape-900x600.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/iphone-free-stock-photos-2210x3315.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/young-millennial-girl-drinking-lemonade-and-overlooking-the-city-2210x1473.jpg)</span><br><span class="line">![](https://picjumbo.com/wp-content/uploads/modern-graphic-designer-essentials_free_stock_photos_picjumbo_HNCK4919-2210x1474.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191101143214.png" alt="图片"></p><pre><code># 隐藏标签如果你想把一些文字，内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。写法：inline 在文本里面添加按钮隐藏内容，只限文字（content不能包含当引号，可用&amp;apos;）</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% hideInline content,display,<span class="built_in">bg</span>,color %&#125;</span><br></pre></td></tr></table></figure><ol><li><p>content：文本内容</p></li><li><p>display：按钮显示的文字（任选）</p></li><li><p>bg：按钮的背景颜色（任选）</p></li><li><p>color：按钮文字的颜色（任选）</p><p> block独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% hideBlock display,<span class="built_in">bg</span>,color %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure></li><li><p>content：文本内容</p></li><li><p>display：按钮显示的文字（任选）</p></li><li><p>bg：按钮的背景颜色（任选）</p></li><li><p>color：按钮文字的颜色（任选）</p><p> 例如：inline</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">哪個英文字母最酷？ &#123;% hideInline 因為西裝褲(C裝酷),查看答案,<span class="comment">#FF7242,#fff %&#125;</span></span><br><span class="line"></span><br><span class="line">門裏站着一個人? &#123;% hideInline 閃 %&#125;</span><br></pre></td></tr></table></figure><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tag-hide-inline.gif" alt="图片"></p><p> 例如：block</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;% hideBlock 查看答案 %&#125;</span><br><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br><span class="line">&#123;% endhideBlock %&#125;</span><br></pre></td></tr></table></figure><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-tag-hide-block.gif" alt="图片"></p></li></ol><h1 id="steam游戏"><a href="#steam游戏" class="headerlink" title="steam游戏"></a>steam游戏</h1><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ul><li>嵌入单个游戏<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% steamgame appid description %&#125;</span><br></pre></td></tr></table></figure></li><li>批量嵌入游戏<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% steamgames %&#125;</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">appid</span><br><span class="line">&#123;% endsteamgames %&#125;</span><br></pre></td></tr></table></figure><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2>  appid: Steam 游戏 id.<br>  description(可选): 用于替换默认游戏简介。<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% steamgame 1057090 %&#125;</span><br></pre></td></tr></table></figure><iframe src="https://store.steampowered.com/widget/1057090/" frameborder="0" width="100%" height="190"></iframe><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% steamgame 1057090 &quot;I like it.&quot; %&#125;</span><br></pre></td></tr></table></figure><iframe src="https://store.steampowered.com/widget/1057090/?t=I like it." frameborder="0" width="100%" height="190"></iframe><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% steamgames %&#125;</span><br><span class="line">261570</span><br><span class="line">1057090</span><br><span class="line">&#123;% endsteamgames %&#125;</span><br></pre></td></tr></table></figure><iframe src="https://store.steampowered.com/widget/261570/" frameborder="0" width="100%" height="190"></iframe><iframe src="https://store.steampowered.com/widget/1057090/" frameborder="0" width="100%" height="190"></iframe><h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><a href="https://github.com/HCLonely/hexo-tag-steamgame/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a></li></ul><h1 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h1><p>使用<br>    <script>console.error("Error: [hexo-tag-aplayer] Specified asset file not found ([picture_url,)");</script></p><h2 id="标签参数"><a href="#标签参数" class="headerlink" title="标签参数"></a>标签参数</h2><ul><li>title : 曲目标题</li><li>author: 曲目作者</li><li>url: 音乐文件 URL 地址</li><li>picture_url: (可选) 音乐对应的图片地址</li><li>narrow: （可选）播放器袖珍风格</li><li>autoplay: (可选) 自动播放，移动端浏览器暂时不支持此功能</li><li>width:xxx: (可选) 播放器宽度 (默认: 100%)</li><li>lrc:xxx: （可选）歌词文件 URL 地址</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>        <div id="aplayer-yHujpfDG" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-yHujpfDG"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "寻",              author: "华晨宇",              url: "https://link.hhtjim.com/163/472137749.mp3",              pic: "http://p1.music.126.net/FvjW-zHtoAQ5__FGag_OVQ==/109951163077686047.jpg",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;2802022828&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>    <div id="aplayer-USbnheNu" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="2802022828" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"    ></div>]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一本正经的更新日志</title>
-    <url>/posts/27362/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="6月5日"><a href="#6月5日" class="headerlink" title="6月5日"></a>6月5日</h1><ul>
-<li>暂停更新命运2下赛季回坑(大概吧)</li>
-</ul>
-<hr>
-<h1 id="6月4日"><a href="#6月4日" class="headerlink" title="6月4日"></a>6月4日</h1><ul>
-<li>正式更换域名 <a href="https://www.dalaoa.top">dalaoa.top</a></li>
-<li>全站https</li>
-<li><a href="https://im.dalaoa.top" target="_blank" rel="noopener">个人主页</a></li>
-<li><a href="https://aria2.dalaoa.top" target="_blank" rel="noopener">aria2下载页</a></li>
-<li><a href="https://drive.dalaoa.top" target="_blank" rel="noopener">Onedrive</a>分享页</li>
-</ul>
-<hr>
-<h1 id="6月2日更新"><a href="#6月2日更新" class="headerlink" title="6月2日更新"></a>6月2日更新</h1><ul>
-<li>关于我页对话框</li>
-</ul>
-<hr>
-<h1 id="6月1日更新"><a href="#6月1日更新" class="headerlink" title="6月1日更新"></a>6月1日更新</h1><ul>
-<li>儿童节快乐</li>
-<li>修复日历(一个月了终于修了)</li>
-</ul>
-<hr>
-<h1 id="5月23日更新"><a href="#5月23日更新" class="headerlink" title="5月23日更新"></a>5月23日更新</h1><ul>
-<li>添加<code>Aria2</code><del>伪</del>离线下载自动上传<code>Onedrive</code></li>
-</ul>
-<hr>
-<h1 id="5月18日更新"><a href="#5月18日更新" class="headerlink" title="5月18日更新"></a>5月18日更新</h1><ul>
-<li>添加网盘 <a href="https://liumouone.herokuapp.com/" target="_blank" rel="noopener">xianyu</a></li>
-<li>添加网盘 <a href="https://ghoulowl.github.io" target="_blank" rel="noopener">黑虎阿福</a></li>
-</ul>
-<hr>
-<h1 id="5月15日更新"><a href="#5月15日更新" class="headerlink" title="5月15日更新"></a>5月15日更新</h1><ul>
-<li>添加aria2公共离线下载页 <a href="http://101.132.145.32:8080/" target="_blank" rel="noopener">临时地址</a></li>
-<li><del>离线文件下载地址</del> 处理中。。</li>
-<li>OneDrive文件分享页</li>
-</ul>
-<hr>
-<h1 id="5月12日更新"><a href="#5月12日更新" class="headerlink" title="5月12日更新"></a>5月12日更新</h1><ul>
-<li>添加主页</li>
-<li><del>添加留言反馈页</del></li>
-<li>删除图书页</li>
-<li>删除游戏列表</li>
-<li>添加哔哩哔哩图标</li>
-<li>添加图标颜色</li>
-<li>新域名dalaoa.top备案中 为了通过其它三个暂时下线修改</li>
-</ul>
-<hr>
-<h1 id="5月9日更新"><a href="#5月9日更新" class="headerlink" title="5月9日更新"></a>5月9日更新</h1><ul>
-<li>移除加载动画</li>
-<li>优化页面加载速度</li>
-</ul>
-<hr>
-<h1 id="5月8日更新"><a href="#5月8日更新" class="headerlink" title="5月8日更新"></a>5月8日更新</h1><ul>
-<li>更新版本2.3.5</li>
-<li>添加加载动画</li>
-<li>去除隐藏文章</li>
-<li>更新最后一愿愿望说明</li>
-<li>评论添加qq号获取昵称邮箱</li>
-<li>评论添加强制输入昵称及邮箱</li>
-</ul>
-<hr>
-<h1 id="5月7日更新"><a href="#5月7日更新" class="headerlink" title="5月7日更新"></a>5月7日更新</h1><ul>
-<li>添加镜像站</li>
-<li>相册更新</li>
-</ul>
-<hr>
-<h1 id="5月6日更新"><a href="#5月6日更新" class="headerlink" title="5月6日更新"></a>5月6日更新</h1><ul>
-<li><del>本站正式更换域名：<a href="https://dalaoa.top" target="_blank" rel="noopener">dalaoa.top</a></del>还要备案。。。****</li>
-<li>优化部分连接</li>
-<li>新加Steam游戏安利页面</li>
-</ul>
-<hr>
-<h1 id="5月5日更新"><a href="#5月5日更新" class="headerlink" title="5月5日更新"></a>5月5日更新</h1><ul>
-<li>添加友链</li>
-</ul>
-<hr>
-<h1 id="5月4日更新"><a href="#5月4日更新" class="headerlink" title="5月4日更新"></a>5月4日更新</h1><ul>
-<li>更改首页添加背景</li>
-</ul>
-<hr>
-<h1 id="4月30日更新"><a href="#4月30日更新" class="headerlink" title="4月30日更新"></a>4月30日更新</h1><ul>
-<li>版本升级</li>
-<li>修复主页背景只有400像素问题</li>
-<li>增加页脚</li>
-</ul>
-<hr>
-<h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul>
-<li>修复导航栏</li>
-<li>添加<a href="https://search.google.com/u/0/search-console?resource_id=sc-domain%3Axn--2-wd9al63p.xn--ses554g" target="_blank" rel="noopener">Google Search Console</a></li>
-<li>添加<a href="https://analytics.google.com/analytics/web/#/report-home/a163767383w229216075p215986012" target="_blank" rel="noopener">Google Analytics(分析)</a></li>
-<li>添加评论<a href="https://glxme0nstbbq.leanapp.cn" target="_blank" rel="noopener">后台页面</a></li>
-<li>添加评论获取QQ头像</li>
-<li>添加评论标签</li>
-</ul>
-<hr>
-<h1 id="4月28日更新"><a href="#4月28日更新" class="headerlink" title="4月28日更新"></a>4月28日更新</h1><ul>
-<li>添加评论邮件提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/U20f1ceeebaca4d63bf8243e7b83b364bb.png" alt=""></li>
-<li>添加评论微信提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/Ued033ef707904051a3f9f5531e68b8d3O.jpg" alt=""></li>
-<li>添加评论QQ提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/Ua6d1376e0bdd4756a34087384f717122J.jpg" alt=""></li>
-<li>相册更新(上传好费劲…)</li>
-<li>新增导航栏BUG</li>
-</ul>
-<hr>
-<h1 id="4月27日更新"><a href="#4月27日更新" class="headerlink" title="4月27日更新"></a>4月27日更新</h1><ul>
-<li>Https 正常访问</li>
-<li>加密文章 正常访问</li>
-<li>原声带歌曲更新</li>
-<li>原声带下载方式更新</li>
-<li>导航栏更新</li>
-<li>相册页更新</li>
-<li>番剧页更新</li>
-<li><del>留言反馈页添加</del></li>
-</ul>
-<hr>
-<h1 id="4月25日更新"><a href="#4月25日更新" class="headerlink" title="4月25日更新"></a>4月25日更新</h1><ul>
-<li><del>侧边日历</del>(有点小问题 <del>但无伤大雅</del> 强迫症别看。。)</li>
-<li>评论邮件提醒(在做了在做了。。)</li>
-<li>侧边Pixiv日榜(总算有个完成的了)</li>
-<li>https  (啥？不管了不管了)</li>
-<li>加密文章 好像能用了。。</li>
-</ul>
-<hr>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一本正经的更新日志</title>
+      <link href="/posts/27362/"/>
+      <url>/posts/27362/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="6月5日"><a href="#6月5日" class="headerlink" title="6月5日"></a>6月5日</h1><ul><li>暂停更新命运2下赛季回坑(大概吧)</li></ul><hr><h1 id="6月4日"><a href="#6月4日" class="headerlink" title="6月4日"></a>6月4日</h1><ul><li>正式更换域名 <a href="https://www.dalaoa.top">dalaoa.top</a></li><li>全站https</li><li><a href="https://im.dalaoa.top" target="_blank" rel="noopener">个人主页</a></li><li><a href="https://aria2.dalaoa.top" target="_blank" rel="noopener">aria2下载页</a></li><li><a href="https://drive.dalaoa.top" target="_blank" rel="noopener">Onedrive</a>分享页</li></ul><hr><h1 id="6月2日更新"><a href="#6月2日更新" class="headerlink" title="6月2日更新"></a>6月2日更新</h1><ul><li>关于我页对话框</li></ul><hr><h1 id="6月1日更新"><a href="#6月1日更新" class="headerlink" title="6月1日更新"></a>6月1日更新</h1><ul><li>儿童节快乐</li><li>修复日历(一个月了终于修了)</li></ul><hr><h1 id="5月23日更新"><a href="#5月23日更新" class="headerlink" title="5月23日更新"></a>5月23日更新</h1><ul><li>添加<code>Aria2</code><del>伪</del>离线下载自动上传<code>Onedrive</code></li></ul><hr><h1 id="5月18日更新"><a href="#5月18日更新" class="headerlink" title="5月18日更新"></a>5月18日更新</h1><ul><li>添加网盘 <a href="https://liumouone.herokuapp.com/" target="_blank" rel="noopener">xianyu</a></li><li>添加网盘 <a href="https://ghoulowl.github.io" target="_blank" rel="noopener">黑虎阿福</a></li></ul><hr><h1 id="5月15日更新"><a href="#5月15日更新" class="headerlink" title="5月15日更新"></a>5月15日更新</h1><ul><li>添加aria2公共离线下载页 <a href="http://101.132.145.32:8080/" target="_blank" rel="noopener">临时地址</a></li><li><del>离线文件下载地址</del> 处理中。。</li><li>OneDrive文件分享页</li></ul><hr><h1 id="5月12日更新"><a href="#5月12日更新" class="headerlink" title="5月12日更新"></a>5月12日更新</h1><ul><li>添加主页</li><li><del>添加留言反馈页</del></li><li>删除图书页</li><li>删除游戏列表</li><li>添加哔哩哔哩图标</li><li>添加图标颜色</li><li>新域名dalaoa.top备案中 为了通过其它三个暂时下线修改</li></ul><hr><h1 id="5月9日更新"><a href="#5月9日更新" class="headerlink" title="5月9日更新"></a>5月9日更新</h1><ul><li>移除加载动画</li><li>优化页面加载速度</li></ul><hr><h1 id="5月8日更新"><a href="#5月8日更新" class="headerlink" title="5月8日更新"></a>5月8日更新</h1><ul><li>更新版本2.3.5</li><li>添加加载动画</li><li>去除隐藏文章</li><li>更新最后一愿愿望说明</li><li>评论添加qq号获取昵称邮箱</li><li>评论添加强制输入昵称及邮箱</li></ul><hr><h1 id="5月7日更新"><a href="#5月7日更新" class="headerlink" title="5月7日更新"></a>5月7日更新</h1><ul><li>添加镜像站</li><li>相册更新</li></ul><hr><h1 id="5月6日更新"><a href="#5月6日更新" class="headerlink" title="5月6日更新"></a>5月6日更新</h1><ul><li><del>本站正式更换域名：<a href="https://dalaoa.top" target="_blank" rel="noopener">dalaoa.top</a></del>还要备案。。。****</li><li>优化部分连接</li><li>新加Steam游戏安利页面</li></ul><hr><h1 id="5月5日更新"><a href="#5月5日更新" class="headerlink" title="5月5日更新"></a>5月5日更新</h1><ul><li>添加友链</li></ul><hr><h1 id="5月4日更新"><a href="#5月4日更新" class="headerlink" title="5月4日更新"></a>5月4日更新</h1><ul><li>更改首页添加背景</li></ul><hr><h1 id="4月30日更新"><a href="#4月30日更新" class="headerlink" title="4月30日更新"></a>4月30日更新</h1><ul><li>版本升级</li><li>修复主页背景只有400像素问题</li><li>增加页脚</li></ul><hr><h1 id="4月29日更新"><a href="#4月29日更新" class="headerlink" title="4月29日更新"></a>4月29日更新</h1><ul><li>修复导航栏</li><li>添加<a href="https://search.google.com/u/0/search-console?resource_id=sc-domain%3Axn--2-wd9al63p.xn--ses554g" target="_blank" rel="noopener">Google Search Console</a></li><li>添加<a href="https://analytics.google.com/analytics/web/#/report-home/a163767383w229216075p215986012" target="_blank" rel="noopener">Google Analytics(分析)</a></li><li>添加评论<a href="https://glxme0nstbbq.leanapp.cn" target="_blank" rel="noopener">后台页面</a></li><li>添加评论获取QQ头像</li><li>添加评论标签</li></ul><hr><h1 id="4月28日更新"><a href="#4月28日更新" class="headerlink" title="4月28日更新"></a>4月28日更新</h1><ul><li>添加评论邮件提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/U20f1ceeebaca4d63bf8243e7b83b364bb.png" alt=""></li><li>添加评论微信提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/Ued033ef707904051a3f9f5531e68b8d3O.jpg" alt=""></li><li>添加评论QQ提醒<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://ae01.alicdn.com/kf/Ua6d1376e0bdd4756a34087384f717122J.jpg" alt=""></li><li>相册更新(上传好费劲…)</li><li>新增导航栏BUG</li></ul><hr><h1 id="4月27日更新"><a href="#4月27日更新" class="headerlink" title="4月27日更新"></a>4月27日更新</h1><ul><li>Https 正常访问</li><li>加密文章 正常访问</li><li>原声带歌曲更新</li><li>原声带下载方式更新</li><li>导航栏更新</li><li>相册页更新</li><li>番剧页更新</li><li><del>留言反馈页添加</del></li></ul><hr><h1 id="4月25日更新"><a href="#4月25日更新" class="headerlink" title="4月25日更新"></a>4月25日更新</h1><ul><li><del>侧边日历</del>(有点小问题 <del>但无伤大雅</del> 强迫症别看。。)</li><li>评论邮件提醒(在做了在做了。。)</li><li>侧边Pixiv日榜(总算有个完成的了)</li><li>https  (啥？不管了不管了)</li><li>加密文章 好像能用了。。</li></ul><hr>]]></content>
+      
+      
       <categories>
-        <category>Update</category>
+          
+          <category> Update </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-        <tag>About</tag>
-        <tag>Update</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正则表达式</title>
-    <url>/posts/46563/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>地址： <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a> </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">a，b或c的单个字符		[abc]</span><br><span class="line">下列字符除外：a，b或c		[^abc]</span><br><span class="line">范围内的字符：az			[az]</span><br><span class="line">不在此非为内的字符：az		[^az]</span><br><span class="line">范围内的字符：az或AZ		[a-zAz-]</span><br><span class="line">任何单个字符			.</span><br><span class="line">任何空白字符			\s</span><br><span class="line">任何非空白字符			\S</span><br><span class="line">任何数字				\d</span><br><span class="line">任何非数字			\D</span><br><span class="line">任何字源				\w</span><br><span class="line">任何非文字字源			\W</span><br><span class="line">捕获所有封闭的内容		(...)</span><br><span class="line">匹配a或b				(a|b)</span><br><span class="line">零或一个				a?</span><br><span class="line">零个或多个			a*</span><br><span class="line">一个或多个			a+</span><br><span class="line">恰好是三个			a&#123;3&#125;</span><br><span class="line">三个或者更多			a&#123;3,&#125;</span><br><span class="line">在3到6之间			a&#123;3,6&#125;</span><br><span class="line">字符串开始			^</span><br><span class="line">字符串结尾			$</span><br><span class="line">单词边界				\b</span><br><span class="line">非单词边界			\B</span><br></pre></td></tr></table></figure>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+            <tag> About </tag>
+            
+            <tag> Update </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>正则表达式</title>
+      <link href="/posts/46563/"/>
+      <url>/posts/46563/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><p>地址： <a href="https://regex101.com/" target="_blank" rel="noopener">https://regex101.com/</a> </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">a，b或c的单个字符[abc]</span><br><span class="line">下列字符除外：a，b或c[^abc]</span><br><span class="line">范围内的字符：az[az]</span><br><span class="line">不在此非为内的字符：az[^az]</span><br><span class="line">范围内的字符：az或AZ[a-zAz-]</span><br><span class="line">任何单个字符.</span><br><span class="line">任何空白字符\s</span><br><span class="line">任何非空白字符\S</span><br><span class="line">任何数字\d</span><br><span class="line">任何非数字\D</span><br><span class="line">任何字源\w</span><br><span class="line">任何非文字字源\W</span><br><span class="line">捕获所有封闭的内容(...)</span><br><span class="line">匹配a或b(a|b)</span><br><span class="line">零或一个a?</span><br><span class="line">零个或多个a*</span><br><span class="line">一个或多个a+</span><br><span class="line">恰好是三个a&#123;3&#125;</span><br><span class="line">三个或者更多a&#123;3,&#125;</span><br><span class="line">在3到6之间a&#123;3,6&#125;</span><br><span class="line">字符串开始^</span><br><span class="line">字符串结尾$</span><br><span class="line">单词边界\b</span><br><span class="line">非单词边界\B</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/posts/16107/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">不给看！气不气！气不气！气不气！</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="e1f540af3cf52b8e39acb0c269d9421671d4217ccecc2c081e722d1964023a7a">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e9e441720658b69d934ff31b0fc2673d523da93435fe0f1812dd9e71a853fb55a101b4c4e6f1242b29323ff24514386e0d7cc93fd2dfd3f081c84e8e0d81633a02686109fb83b400f6b38023d440e59259f24d20bfe48ffd23b24d71c00d9a08ded281672b729bf6a5d6a4716a80496d3950ecc8d14141a7fc32c298d3902884fc1751e08cc2314ae14bc5594e82bae3823e745dbb6e04eb2b806337754e534f3ebdba5e57709e255b64f7d002b6d2d209f3e352f6e34704644d14452e5157cb71ba57f4cc6d93d2ecfdf0899af7732d2506792f431f7f6373a3972fc4fd6ef60966d2bb2fad71afc0305319755f0b67684a43cc00d8d900539ac9cfb3c59dc843b6b95e19060d2002b15a4652afd3c4ccc0f1a9329149b7c56f8653279ac61dfb0bb1f55c35e76384b1aab5711ffd9194104af0cd10fdb472a4f7709aeedb0e4dcf076f97a252592775ab0523f68dd0b578121930c3efddbe33d62df4075c3aeaa90fecb1caedd968461d87b92cc6ba38880fe6eb45a90bc5013a9481ef8e8a6b15c45104bbd8abcfb5d06d272fea3021ef78fbdf2de49c47f007ce4bacd1a78bf2a8a9ea70dc478fa33a97b289f0d4343f9175639d66f46644f2b5ed7ae68c3803fcc2529ca3689b87d99c907d6e1304b7f458a5bcb7922b324749158d231730a043d8c126d5d5cae0a846741c63e16561a39204f1e6ee079fdb9011a7f648533f991c6e0926aec8cd706fc8cad337e863ea0a72860e0fb770040d4720f482ccfe07561255251066cb420fd261778f8f8031caf8f992ffcc69a2edf5f31a47145fe58c4fca5883ec5f9b67db711c341753e917bad8979041637b4f8ef3523ad1c53b6aa38d9caf9279160c1d482d848e6bab57db724eb4cd70c6d968063957139488c6d0b14fb383311da2bd85579fce739b95182bcf4f08c920878b0aa8c7535409969a9e44d94569c68c109143bb8b62c51a386d0d0b642bdb8e243b38f104dea09f4d4eff0bae77dc39748be9ea53103aff02b657d3961017ff10b16657f9ac98a53375654868efc5fed9b9e388ddad35c991a6fe76fdf651d3689f585d49b5d187ad4897a58223703c8f6f6b6017b7a5519c257b2ed710a35eb82a4155517ffdcf62f10c5439fb755782339c8dabaecb7b2838d560054fe02dc2cf159ce54eab759a21a599a5bfc6d784e612a78a1285b30895f3e2812084f12a88f1a6e9fc1b9c67fe9f315af4a348de092a2b34ffe5db62cef1539ea0c2ae54b69d1e27accb688afd36bcb0c15369eb4daa0afa4a72e64eff6e16c294250ddb3a5936433c533e9aee1ba119dc109cb527f77d3fe0405f36e90b362870044d0efe275bb705f9439b1f77365bb6bb4d1d82b8717f6dee652659103ec4b355c24c8bce23c23cae78bf8085daedaa839c6ecb075a7d7fcbf1c14a41c6c1bdd631ab487a400ba5ff542275cd08910f92da7d996bb482c95d7d65d83f163d277605eec5fe02ae67e27706d2a2ca9d88618d2160a5e26e684ff5b5775a5a4731ac3ac9f26d3b5a441380e9d44c4e78520ed625f8795f034d4d099ae49210e261452aad287b0a05d493e9a12796241e1878b49b7223b2b0a5c9a805e61cd1f6167d345992018f989d975ca02ffbcb81e107e1eb67c3cb5625a9a391ea4423adf13077e2b0926b3b5611ecee120e8ba5435efea78f4b477042a601a51c8e7e666789808dbcada671f56df8726d53adffe24e4e1df8bac6b81aa3d9a482b8f4a614c340e3752dcc8b7337166958587e06d821044bf0233d403830fe17d4e86e5c5d30c693fcf954b5a1afc023d9fb113034b53ad9303ed5158ce559d572d7b637a6147712602615a7dd08d351aeb85709303665c86c4c482e223fa3b19d6ef04076e6853fee2b3c6249a5b20ebefd04ab740e24a0d0898a8c091ddfc34d49d2f1d10d6ae4845967a01d9bc67ac5a3247cb2e48651c2452ea89ccf1e45870afac2cf4237867841399e6d58c718181b6c779cab04125f6490ab194bd7af5555ef4d3eaa7d3d685d60b32e01cbaefc3327900ef4198030bbd79892633e860cbf6ae039fd465c97088f3211716e8b42d20015a3ee69d311d27a8c7f01e537d672d763e326d2038a9e0d5659f88a329aefc9fbfb9d2493c134053fe7ef146969b8805c4473e3f09f90d686b67be9a8026439de545d2151091463d857d5ea3277b5dedde6cc169c2eb8a6ae5c73d937834aebec9858eb851dfdba4e713beebd2df6ecef48b5e33d1ab5187f46cb5db0562319626eca3a10d2510b57ea449c9b60e87b7f48c0d523d61b85ea453a402405ff0edf1f97207864fa16e5db9dbcb78bc2aa0025783c351714e58c9ad7084ba3a69ee607d9b83b04696a64407e697debbd743fe142bf9abf997bdd019b17be37f4251446114cc5a48f1e55dc6e07404c0dde1bd90dbacc4b8486ec9781f91b658a9d0d603b6ed54197c207dec6dde74b5392ffacae6ab66c5aaabcd1d147a814a650f945b1553f29af4fadea764ce7952f1fce2408a93586f86d011b1014da5f1b030f2e872a04daf4867e7628ec6575b3be557a7c19dc6dd90c39d80051edb7a3770e0cd540273c250c0a327783a93bc16ce687e27dd8df82e90db5f5ed74755972e3dd685127388c1312a1c32484433db44f5ced517cae55bab5f4c81dac174012c3629a20445d72eedd0a02646fa6162f175c50ae3b05d12f7969884fd7c5f5a2d596097537890abdb0991a5125325d406888e82e27d7d30e9a586bf1a5ddde48ca2d374e7ca11751cbb7976084b8ac5fb35f0657e57a827c965f20d67db75f4b9643677f07d53bb6fcf3d80ea49a6a084271ab0c661a62c6f8c2fc116022f421d004b928f120c953df5bd1dbdbe8f17f577268cfa0d0303c25ecb45531e824c49bf5ae7034446ff55e8e2605501350b7f45c1821166b68a80b688b176a8844a687e83fd7a587724ba7f0e9c9144e770c6da5a7b09c5bc5df540b6cacae88e899ba88cc2759d68d4375bbe7a3c5db6829d2d5f04f75b22e48d81070b6b34305ef23f94dc9c731ffbf97b35d9504f4645d0866429094f46b09fb186031d5626e908565cdfa1fa645fc9c57427e003f5709612891ca24d6cadfb1dca8941616758825655bc714dc66ddf448c1842532c593cbeb8c77753e9cc512eaa4d305c32bebdc65743d16aed36d28d704fefc4469757d1f4042333ad9056f747159bfa30c939852eeca15441ae3b9e2480e8ce58fbb46afb0229411ebb4ea9faf7013fe17159e6eb0bdba4eaf171a359b7d019f5751b0d544027ac52293943217aed1de4b21dc19d108b761e656aedcf59195746d944269f267d94f1f5de85c0e5740966e7e8317d5a09014c2d8b69c1ad5e73d9057993ae129c39f20501ebed75ae8da7cc1b28df540011b94be224cff33e9940a8c296f2758896e46c446263d0e401e8ade545b1a1980303c2283</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/16107/"/>
+      <url>/posts/16107/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">不给看！气不气！气不气！气不气！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="e1f540af3cf52b8e39acb0c269d9421671d4217ccecc2c081e722d1964023a7a">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e9e441720658b69d934ff31b0fc2673d523da93435fe0f1812dd9e71a853fb55a101b4c4e6f1242b29323ff24514386e0d7cc93fd2dfd3f081c84e8e0d81633a02686109fb83b400f6b38023d440e59259f24d20bfe48ffd23b24d71c00d9a08ded281672b729bf6a5d6a4716a80496d3950ecc8d14141a7fc32c298d3902884fc1751e08cc2314ae14bc5594e82bae3823e745dbb6e04eb2b806337754e534f3ebdba5e57709e255b64f7d002b6d2d209f3e352f6e34704644d14452e5157cb71ba57f4cc6d93d2ecfdf0899af7732d2506792f431f7f6373a3972fc4fd6ef60966d2bb2fad71afc0305319755f0b67684a43cc00d8d900539ac9cfb3c59dc843b6b95e19060d2002b15a4652afd3c4ccc0f1a9329149b7c56f8653279ac61dfb0bb1f55c35e76384b1aab5711ffd9194104af0cd10fdb472a4f7709aeedb0e4dcf076f97a252592775ab0523f68dd0b578121930c3efddbe33d62df4075c3aeaa90fecb1caedd968461d87b92cc6ba38880fe6eb45a90bc5013a9481ef8e8a6b15c45104bbd8abcfb5d06d272fea3021ef78fbdf2de49c47f007ce4bacd1a78bf2a8a9ea70dc478fa33a97b289f0d4343f9175639d66f46644f2b5ed7ae68c3803fcc2529ca3689b87d99c907d6e1304b7f458a5bcb7922b324749158d231730a043d8c126d5d5cae0a846741c63e16561a39204f1e6ee079fdb9011a7f648533f991c6e0926aec8cd706fc8cad337e863ea0a72860e0fb770040d4720f482ccfe07561255251066cb420fd261778f8f8031caf8f992ffcc69a2edf5f31a47145fe58c4fca5883ec5f9b67db711c341753e917bad8979041637b4f8ef3523ad1c53b6aa38d9caf9279160c1d482d848e6bab57db724eb4cd70c6d968063957139488c6d0b14fb383311da2bd85579fce739b95182bcf4f08c920878b0aa8c7535409969a9e44d94569c68c109143bb8b62c51a386d0d0b642bdb8e243b38f104dea09f4d4eff0bae77dc39748be9ea53103aff02b657d3961017ff10b16657f9ac98a53375654868efc5fed9b9e388ddad35c991a6fe76fdf651d3689f585d49b5d187ad4897a58223703c8f6f6b6017b7a5519c257b2ed710a35eb82a4155517ffdcf62f10c5439fb755782339c8dabaecb7b2838d560054fe02dc2cf159ce54eab759a21a599a5bfc6d784e612a78a1285b30895f3e2812084f12a88f1a6e9fc1b9c67fe9f315af4a348de092a2b34ffe5db62cef1539ea0c2ae54b69d1e27accb688afd36bcb0c15369eb4daa0afa4a72e64eff6e16c294250ddb3a5936433c533e9aee1ba119dc109cb527f77d3fe0405f36e90b362870044d0efe275bb705f9439b1f77365bb6bb4d1d82b8717f6dee652659103ec4b355c24c8bce23c23cae78bf8085daedaa839c6ecb075a7d7fcbf1c14a41c6c1bdd631ab487a400ba5ff542275cd08910f92da7d996bb482c95d7d65d83f163d277605eec5fe02ae67e27706d2a2ca9d88618d2160a5e26e684ff5b5775a5a4731ac3ac9f26d3b5a441380e9d44c4e78520ed625f8795f034d4d099ae49210e261452aad287b0a05d493e9a12796241e1878b49b7223b2b0a5c9a805e61cd1f6167d345992018f989d975ca02ffbcb81e107e1eb67c3cb5625a9a391ea4423adf13077e2b0926b3b5611ecee120e8ba5435efea78f4b477042a601a51c8e7e666789808dbcada671f56df8726d53adffe24e4e1df8bac6b81aa3d9a482b8f4a614c340e3752dcc8b7337166958587e06d821044bf0233d403830fe17d4e86e5c5d30c693fcf954b5a1afc023d9fb113034b53ad9303ed5158ce559d572d7b637a6147712602615a7dd08d351aeb85709303665c86c4c482e223fa3b19d6ef04076e6853fee2b3c6249a5b20ebefd04ab740e24a0d0898a8c091ddfc34d49d2f1d10d6ae4845967a01d9bc67ac5a3247cb2e48651c2452ea89ccf1e45870afac2cf4237867841399e6d58c718181b6c779cab04125f6490ab194bd7af5555ef4d3eaa7d3d685d60b32e01cbaefc3327900ef4198030bbd79892633e860cbf6ae039fd465c97088f3211716e8b42d20015a3ee69d311d27a8c7f01e537d672d763e326d2038a9e0d5659f88a329aefc9fbfb9d2493c134053fe7ef146969b8805c4473e3f09f90d686b67be9a8026439de545d2151091463d857d5ea3277b5dedde6cc169c2eb8a6ae5c73d937834aebec9858eb851dfdba4e713beebd2df6ecef48b5e33d1ab5187f46cb5db0562319626eca3a10d2510b57ea449c9b60e87b7f48c0d523d61b85ea453a402405ff0edf1f97207864fa16e5db9dbcb78bc2aa0025783c351714e58c9ad7084ba3a69ee607d9b83b04696a64407e697debbd743fe142bf9abf997bdd019b17be37f4251446114cc5a48f1e55dc6e07404c0dde1bd90dbacc4b8486ec9781f91b658a9d0d603b6ed54197c207dec6dde74b5392ffacae6ab66c5aaabcd1d147a814a650f945b1553f29af4fadea764ce7952f1fce2408a93586f86d011b1014da5f1b030f2e872a04daf4867e7628ec6575b3be557a7c19dc6dd90c39d80051edb7a3770e0cd540273c250c0a327783a93bc16ce687e27dd8df82e90db5f5ed74755972e3dd685127388c1312a1c32484433db44f5ced517cae55bab5f4c81dac174012c3629a20445d72eedd0a02646fa6162f175c50ae3b05d12f7969884fd7c5f5a2d596097537890abdb0991a5125325d406888e82e27d7d30e9a586bf1a5ddde48ca2d374e7ca11751cbb7976084b8ac5fb35f0657e57a827c965f20d67db75f4b9643677f07d53bb6fcf3d80ea49a6a084271ab0c661a62c6f8c2fc116022f421d004b928f120c953df5bd1dbdbe8f17f577268cfa0d0303c25ecb45531e824c49bf5ae7034446ff55e8e2605501350b7f45c1821166b68a80b688b176a8844a687e83fd7a587724ba7f0e9c9144e770c6da5a7b09c5bc5df540b6cacae88e899ba88cc2759d68d4375bbe7a3c5db6829d2d5f04f75b22e48d81070b6b34305ef23f94dc9c731ffbf97b35d9504f4645d0866429094f46b09fb186031d5626e908565cdfa1fa645fc9c57427e003f5709612891ca24d6cadfb1dca8941616758825655bc714dc66ddf448c1842532c593cbeb8c77753e9cc512eaa4d305c32bebdc65743d16aed36d28d704fefc4469757d1f4042333ad9056f747159bfa30c939852eeca15441ae3b9e2480e8ce58fbb46afb0229411ebb4ea9faf7013fe17159e6eb0bdba4eaf171a359b7d019f5751b0d544027ac52293943217aed1de4b21dc19d108b761e656aedcf59195746d944269f267d94f1f5de85c0e5740966e7e8317d5a09014c2d8b69c1ad5e73d9057993ae129c39f20501ebed75ae8da7cc1b28df540011b94be224cff33e9940a8c296f2758896e46c446263d0e401e8ade545b1a1980303c2283</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
       <categories>
-        <category>其它</category>
+          
+          <category> 其它 </category>
+          
       </categories>
-      <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于网易云音乐无版权歌曲</title>
-    <url>/posts/55047/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">不给看！气不气！气不气！气不气！</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="2d2f62f2af70ec5f6ae6bdb03c9693b8ea30a7612b75afb32578cdc4d2e4eaf1">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e90af557b6fbc25e303d6fa233a9759bf9368fa0e9e463cc9e7d4263ebfba77f3a24b718166a50f74ad8f87c508d4c81ebdf4832a807c8ae206f35060e2a81538198245022388ae0172490dd10ef6d6437c8d214d2b0c00e7c8849c20f0f8d52590b7ea12a5aedd4653c141623ecb5f144ace8d6d6601a0a6ded6ca90d301f865b85d02d4b26a026881478b2cfd61c367dee4df8a61a51f2ab28d00e02a5fca1fdbd13ed9effeb462742e07f979617c0fe702d2443b70fb1054e1fa78855047afacea9a5c00a1766d31f01fa6a3bd6dc6beccad4bb4d7fb9224611e8285b94a11e76aac018162b05e449b65fd98b981d8fdcf8a814233b60da0342b58c1829e3ec2d3501ea520e8f948cc8217b7616984a806769ce5f23371a3c0c541591b13031df398a7a99aec8edcbe8c3c42c635ff4ded7459c4a1cee4276720cae5f7b452c81fc0023ead24dce55f4279e87e9638fbd994e31e2819734d01fe81022e9d70dc0196f76aff49af02a38727ece23110022910702253bbbe773a3ded728bc6b2cf8bba4467d809d5f326fb6b66a8ca600d9dca85b90edbda0cbba63bab928b84b7737937ff37a0b26132825e7e57c57532afe377b0c211f5583c466620f2e8969045952b47525636a84b414619584e4bd82a9eff6b953f25ccccd501a37c4178b7b7c03b1b245fae5bc1e8e58ec7ad5dad6ef17ecb103637930cc3ad158aef34be21a9d2c44c1c40d2203027050ac9ebc2df2fae062980a55d77cb733d277a725f7524e1e736d6f0e6f0a155948137542170004847d94b93ca28f313ec85deaa8b3432eb26c33c661bb265e6a628dce702f0b6f4449461822368f0dced31a251a78b79508955b0836aa6f147238a58f48240362778d609d887ca46592c7c1a95ced9ca0158d54c771803ab01113777b42db5972d3b30c06fb0ffc66d504495aaa051d2e172cc38111d25a4a21cf9468ac59716c17907096f2b622687fcebf2688d5ea267f3335a6a2b744c9025db62b3d01684d5d51ade3ba2fa7ee7f509dc8a25de761bbd2bc465f5e0f35a45bac53b7a6b6ab040a4de4cf911c57134053aceff387644f417973bce2b1d2d5adf9dfa0e59d2cf4e3e55dc55137f31d41358148645d9adab2ea0d62470c5bc203d1a0b2aa9bdfbede7825ba43ac5863f3001ac734aa10eb2c60f4d8d6f021042291af7ed48fddee852ffd5e6e7e59d324d855f1391f7f1b5c1782eaf170f6e02ad779cf444291c931792aeb39c31d7a6c17942ae67a51e0609800dd448f8b9043afd68f026b025e47c6919ed7be8fbd77eb234e556e467a9e86ed3ccd77a6934eccc87a11ef80204d7d1b95d731f76436489c78fa288ffd7d654de3d1b0d7ff464d728922d896db4cc6b19151b5acbdc27ab60f3a38f9896fcf862d6806640f12d615c72d67f2030caa2189eb80541e25d3b02d2795c46dd62023362a340041eac6ae3639e574ea9fb93c55190c6448df56fbd364f4ccd875421e0824bc3af827b6a11c949e99a5c606e058a5868148ce76d300801e3a110db98d0d782d3ae90162eef41fb7adb9f55441b0269b66f5de9214fdc48720fe3ce5d29f5a48137bcc41b329dfc3dee8d413f504a6e6a1b787fc3893ead6a1012db12c520327fe77863b5efd3138fe01085bc5f770e2dc122ea4bde5432d73d769dd1348a6d247beca4b988c35ec04603d8118009c847364e1e5a981f32c77878e1752981a744a285cc8dfa5b5d03e42368e8b78ce405e6226df928a256175ab83df5e6b56ef75310c38ffee2b8e8fa32f92e5d384a2f8b70976aff6706a9269af572ebb381c705fd8ad0ddf9a32b91d5c0320d8f8788d3874536cb8712269ce45a18b6074a0f3f7d87dbd169d7e969f46a3c70c0b89d8627548895051898b0f3b2490603690615c351215cc494caa598d4198d6d8ca35808582a51e3f08e985900e2770972822fd502768eee2644446e182cbac698080f08da53fca8195db71dbb985199fabc54805b6c67fca2b4abc9b6d3cc4b071d2b47f4770dfb0b3a6f9beb95815a34f79f13a22fa8a1787f208acf4d06c83f4a4da98965c67d5dec98349f830d29abcc7aeb4dc81ac79ae586b99cb2fbae94c4fb9a258838d16f3baddb783e64b6f22401204d48991f5cee16ce5a0cdedf3451c2ab6b3f1108757982235c988a80a60446988fa03edd42dde5a922441bc464a657f0e531899f1c727858d2399b564e41621ef67d23d4c16487315243499596c743c123ecbda47e7223f7b9e8dcd5738f546613283c5eba2056324e561ae1b00f4ed626aef030ffcb65357912109d5a51e6515320d9d5c0e0112c8ff458ab3e267220dfe86d2af2faa5cc634bc9e99f8cf675863fbd5de2179c1adbf65d51228f38e5c45025b33f2ba2d3cc78a94e630e57dfaf2d5c7af5cd0b2d3f9fa80b21d725deb163391076886a72cb09b852e5830823d0271d5d8b798c8692bb05d6af0745ac49a397e14b6ca7e4ab2bc88ee99267c6cf0a9a23401ecca873e3b1a871ad5c604f15aeabe25b50480df20e17f0f96ca2cd80bdd32fb208ac608647ba497744066328ff5d1f2b94d18c264d5b71a941920c128a3858ae94d737d7962656b85608c330b3b1791faa4e705e253cbc2914f5b485a130b50fc73271a284c1a8ede57495bdcb39932e3dba2a059677efc409c520e7742ead3f464564a4127c224eb2699bd2ade5b64a23ba038c87b5df0931d219dcd67586f9053feefd632652c2d6f15d6b1d1e7084f83e1ae5297ee4a394d91bc9ab3068a1f39b09f61fc87a6e085a7bd9e4f780f53c8fe28749ccc51824907a50a3ad4fd1cb246e94e9f5c6719e5aa22f824f44b72d324a7ef07b298a3d67c548178c40fd383c5e392baf1150a4f8a6b98db9fa0c0de9213c0989c6d9ee627c0d3817911f0a6169987894abd6e64c63e52c61864b0c2c2dff8e41e9a35d5d5971e1cbdbba29666f0fbfed5f730e47241a11544c0ce0337f096dfba75e30c9ab718f6c85f4f2e09df123cb33909131552b82f07222d55ca4199289df512bd4feeb7c0801d91fe375814bde04fc557e8a4666fdb7b069fa16841d082bfb8036144bc35e96814fdc1f67bef3eb4c7fe372ca5c3805acb54338785e3f0d99761943ab9733bac03a0729dd59b7e92b4db22e0e05485640011ae26f68648024f267746a100508b74884ec4931c26a66f5352e51ffb636c70c4ac129a6f9b6b4e5e2037f7ef8932e72c03c20c08756c54f6c57255a4ce97c9277ca1bff808f44b20aa101fa796ef978c7faa9282db9d594f623fe1d9818f5f3ec163728b10025457879122599d2e0e355da4c78a2b665464fe4deb485e836a595c89e1e4321e7946c809111fd4f55790076a95cd0e0d9fed819a25c3ade0af36eaf8a46c8b1c8c459c54a217319e6feb3c888fb6f0e55b4519be708989eee499f6d254a80f2c67791f158c986b84bfb4dfeb36922b75a2f4a4b262434674e9f20785700e5e6ffb1828119eac5c3a72f449367f03d348fe6049cbe5333d6dd16b0d6ca2dc88c6b45d670830e416224ca626da8cc8057e244715f80476bc020c30850e42b8a55ce1aadd0edb743cac2af2ecd94646031edf701b67dc11af39a337b72f5cc9401abb7b8b0bcadcf25ba94378b3877646873fab4e27e89332f6229d9b203d6619040f91bfcfb7111185be8fcd0e3d83ac7eabc0e68a0c35635d2979c655f173ab6a98204e2c6b91bba871d54e0c0303309ffa9ef64ff08d99223673eec94b6ec9a5cd085167682b7d64d77e93c2a461c1a17989098b58d4c4ec16a0e43e66e5eb17caee976838d7530b923796c173b8e1ee9c962e0ef84b3a8919582a3855b34071020fb8a4fd1a35f396b1bbaf2ac261577cb24c15fdf8e4c8f6ffd01bae2319cf15a00d8275020d746488b12ee9728e652869662fbd33c33fbd8a13defb78d3e3f0ec30e7b9fbc5affa68ce1cdc252e4af727281a3430b2e6f69e22c37825b8be6bef3cb13ed563907cb1a680e06f28589b5fc914f048f5bf1385055bf1e17ca3b0bd8c12d0076880e7243a12f78be758e6eddcaffe5ac45ccc41176279e69d1484ed364cc276dbfa58cb121d72d45d263c363d738ae4dea94ec95c2fadcd305750208ccc44b261b81201d055a0675496507a797e3ea92f37c829a904829cae430782bf84a5d62587d484edd7b71c79aa39d70026a722840fae9f50d4bfb3675f618bef5cd23facc1b1ce39f374624d2b73d45739216698005b4e82c5522584cd6d51b75b7381b99f8ec7090c5fbe9a4dfd5012e0461f69353acc174931cc79328d4eaa21e9b2a16d277552c0404a709451d9789142a4799aae05bfbdfeb693950fe08707258d8870cf3913bbf587d7c3fe490cccfc410370f22e21312226eb4582fdda203e51d3c149f80560e55aee535ca31078d15fb0a99a0c247df13cbdbaf7373e4fc25b2c14200e893618390525ba545719d7bbd40cadfb8392b87bed3fd5897598b28f57020fe7fca3e466a7b917daf8ff3d5bc482efd57ee118377f8b65cbd80934fc8bcf50c5bf90667d3a614bdffe01566e742259623a172f4f26673335937f42b1043b3d43ebbd4becef8b879cc5a468b533bff926c0b85b8cd731281077ddde67f1e06174c03aa956469a992643a866671fc6f14568b4eb40954af6e287088648f1dcbd42c3e11e0259e5b010f61b0a1379ba65e46e8ad56c4a971849b32b304d3cec221b2990f8e6b250d94196b931900282394d5bb94ce8e868906e1f12f4785a3e4f1d52cbe310c664c5ef92753e0bb92d3be557d2b33c9dd4ffe70da309e10edd792dafd1451028b1cdef8fa86fb14d6a777660c4f34ed60c8b022536d4307ea4dc9ee7b018b9f9a76e42b81c4e87354732cd81ce2727e905c10660010a46936101520284b9c06b6c2f25dd11cf51643c8940df3635e9a80773fab734e17347d72c0513393f5a504969c2ff02016423a9a7c6e9690cf4610f24e58ec861fd15c24ef6a85ebd7251c2a9d0d463dc327461216a3a7daea1e2c0cccd4e5cef5c2e127ee20a4f79677cc19ebb68e0fba5a3a2433d4320fa38fa334a69e2e6cd24c02f371f13d1e2586edcefb3967209989db3bb4ff90d5ddfe14502347e0f506e7c85bccc156242c1ee4e1fbdcb20137ca5f6ad900973a5bff497431cd8feec7c25bc4cff83508f4370600e2249ab56259e9570b56d1450b8eac4c11a48c3afb99a94bb0b1be5cd32f8e234164f6f86f482b2644e101d21bfb6c6c978586926944dbf45280fcc4d3839242032534195a868d96411fb8a82311092e7a332bc40fd94725de9193f3187247caba48e5b3444c9cbe038a05ed5ea6998fc6476db0e53e7a0762662a5affa19de2ac8e4ca55f5cdb8fc003b23d1942140272e2cb7c3dfc251e017d091476fe2c400d7edb732af2ab792ada9f4d52dc933c8d431c83fb6682af0dbe37922a9bcdfca59f49e8de9f19df889a626e9039a0ff6e6dd1dab61af5ab8fc826c515b632dca653411bc86c5fb47b9e45afb29c5051b3cf6b5e494a7b3c4881ec34b5553de94ccc766700ea621dc3b5742876a4d8cc3ef9867c99e9d7521310dbb04882818ff507c0536d5a2868d7f3601ce67d2e1045bb86338fa86593a1824d62d7c04ea22f8e1e24be863d60ba7952b9cc183f494caaef0656fa8e157792826aeb2e04b389a82b4ad8a97087130866de7526ddbad7305f20ef25b4274098e51c9028a17fd0cf2172a49b56177a2652a478d7d5aef251dfbdbdd2e13a1afa7c89c0061ef022d678b2493b71d91da718de292bf52c6fca65c541ba1e8e69357c185786f15c7a25dae601a23b61ffdea66df7bb52eb94360f72172acce032ec44b12b072ec0eebb2ef176384b7719d06c247630f1d4eca49ab5152c276ed1ebc73bebe8898e3a5c31f499bbaa430a6b78d3f414ac4f1fdb60bc4b7209a77e1531fc8856a202db78ed3f880ce9465f08b2172149125ae4b1b4ad5e28a0d57e50a5d026859b9624fb9dac695fb7fa19af2820e7c7db26f521edf9b7796910e9304440d764ce5033630ed7f375f713fb23e09b4aa6044ff07184e003182ab5713456baef8c7826531b2fd7f5d260aa92594e0454aa771e24293f88d8f47cc596880b2634ec13e1b6869de90af375a95a846a6ea6942e0b1e57a3090cb8c044b388bc0286e9142b5df150b6caa4cc49366c98e27090c95c4176ed2dbf612380cd65de20d1c178481250423219692fd56f3ed5b63e56e436dd0d5b37152154ff43e9b36c4c6475be18cd68e9dab130cdd21351fad75b63acb2b748240296e42c647ca042e4be75c487ec645e18296a214818fc9234f209e9e0ed6cf0baf73acd852abc0d54065796280b411a6758b8d60e426827452499f3a79779bbbc4cc64d34e5460baba60b602d9948748a8ad0a641c1bd9f71cc30ffd63cb6b68071412d2ace0316e195c654120672788c33e6c1f979bd58e1fce33b7782f0a3494b31a63c3bfe7c5b11fe0e5b4be48355eb83cd151ad9e0296319ea79ef3997605c56234e51a37e8785d3a4722e3dc011a92496e63a0a4d563b2d3db5fe4604da201c44be36535e9c3420fc4de525c20f841621ba29d1e82589878b10445714b8eec45797606fc6b78422d8cc3ac015976ce309216032f042beedfec2d60fd940e94a6725296ef6cd5e3d2dd70f7c525a7c6f2863d528c51967f6f3e40ad3e8dcbb59e7d5832568a073d256b433de13c2ce269fd349e63c1599704ea9418a5e6550064e732243d4be6e650030e8c707e270a25ffad8cfe7833fc30d975a5f654177f14516938e26a3c14a6a1c6e9f8ac1a2ed785f4712d825b3d7988d39213254069895efe173a2e678cd266f4ede33b2b4c730072210d6b37445c98d3dbc7af307d3ef1abd96459f8274a77bf749e780b907bdd92a1f9759f25a2dc84f1ecea345367215a24e8149dd185c3e068acec6333a2ddae78a06e0d5a2fbe53e9de5acd491b2d996a92181aef8d5ad8a23a484d05fe643fbd75b242817b25b64bf596e59adbe1ab2619564536b7daaa1b67650d584da0d4e06d62595aeabe704bd35331c4eae4d1db2fd99e72798c2dec40c4f1af8c4456b168ac02beee765c1fa9de17a513936dffcc02dbcd94bd03bebb1086fe9c95153fc788ab50e8a650c8ef8bb4d25daee7a9876332ffc298a9cfa8154674ff67f78670e18a15f09ece27dec47e4cdabcae1388bca9a32225a3ae2d364c3bc1b5ed0bafee1deba8b3538091c2fe966b909679402666522da12ab6a9c742c5677a5e7d6fda05906a0c1accd943784dab49a5f29f335d0bc3d6799dbf6a6ef620817535e6ec8b76fffeabbab1b4e7b3df1730dbc13571bcdf851cdf6a1bf4d0c18a94789f049b96be6ec7ed817b30732ab841610d1115aabe794ac79074be038baa563b04769d987bbc04c1ffc26a71d50ff0e5958290c15094eaa5ffcffefb0fac98fd9fc36963148a82f3fc14e49d41f3230f6eeed513d9fc8745803b96015f173cc2452f81ca68f27e501d77372622adaee7f2ee3bcb833c05b63774a8acf870acfb3c9ff989ef45a5e05980536ed9569af7ec2816e1c2f3c5b99f31c6375e9e510cce3070fdbffba7c2d32666c22b6e5ca9a5450e0f21d8c3547081b9a015553882749edd9187b8ec7a45f560cf5406405b01277c387e6a5266000585fd626f8b36f279bc1a2222d65d449c2865142de4e6f13cf7ddd33b819b7a20e58d9b7f8694cdb6a7c789b00811b9422ba57d2aaa31f8f9528a2e59b708df0aa57651ddda578638e065d7a481bf8e44572b12dd766165bfbc4182b752dc0916db3b5ab3f23d2e7bb7e9547bc28eef5ac486eb692fc1e1e9696d34455b0c598566e1a1874b7cf9e631610f67317af2c73b4e72ac11840e7a79f0dcaee5d5279fa084617115069529d06d3d77d29e6788d8a0437347484ecb545a2b8ee9417213a84e788d07109f273a86e536aa493a96732ee89f5f1bc4ce6d54509197ea739569583b8abf8922cd26a7c3d2aad27286d1aa580a7ee47fad7791b5a09415aca6f9dff63984417dea44960476738cbe5301134ef8326e13b32a2c4b902009eccbfa04da7c196cbecde163bba5eafa0e14c7101313dff44e67cef517a057456990969e75ff8609c698c14439bd348ade8b4092a1a33e4d9f75b619e8e1da9c602259ae1355a0ab9bd4775214dc4debe188b51d28d5b7b0afc624d91059f210f79944da45ea31693108b3352fad68fe1747c2e7409f14fdf7917b9edd820e16c9080ffcd538aca72b11d13706d8fb6b82e2bed2a7601d3fed7747994b9ee91b69c1a75cdc3b75c0e64d53af8d93baf14dd3c6ea7137a12b1d5e8b7e341719b6375ea95e4e6a987401326dbdcc1b9c6fc957e3d73f6b2f8b38719f3f817a85517ba7ef815d5fa2ebd42da00df4d29a48b1927c6b239c517f88dde8aaeafbe01cf797fbab39ecf081fd676723e2707fc1b0c547221242ef1469d1b0144e48ddc603ea53dc3300eeb5b603c60724371fd09f024b96387f5ed844f3adcd3eecbac57fd4504c9f104d3c4980fabcca53b934609aac1a16692dfe5fb980b01ba5405854076a3f13b4acf46ee2e8cfacde0a50cf0137a52f38203bdc7714fd7da67e779a6087d8a65785ff5ba508fe922e2174a4a669a8bd4b94ba35b5915aa0bd1d62ae50d9a84b996e93589f76ae42157bd664d601264bce9c7beeb438ff0b0cfb3fb44ccdc875094a5e98c8be7e6f5a8c3ebd06fdf22f20aafa6db34362a44f8d50027da453de07cb029cf03f26b76037ec5833035fc801db04d179da7b2cecfd02399747b7cb474879513b38921e481f52311c622c287ad3b11dd2284b2b9cf3da23bae841365a4191fc4b3c4cb552d8ebbfc89954f9bf6a9ef0c6d2999f16d2f76abe992b79f6c2654ecfb3b76ea3ccb5f1b4143a4bcc0f194f82b138483d51e449b3f3ed4333782ef831e41664740efee8e30811ba78356aac3f12253d24a3cb94a0f6a7d0323889c954afc20008b565de076c09d0dba41083b7c6a408bfe31178ecc7a3061ad3f75d5ca559c5a9e6beaebb064bec3c0aaef0f812fd8a936217afd9d1ec334bf15c61d4de106c343d49b94eee1d7b7ee827da6a00bc806b007a8aa3483e2e980d8edd9221880d67929a4bebfd882958e98127fd0d0d45000fec9e7c014d56ac429a5f31834f6a6b6c8830620e6fc1904270e47a2a6235e66dfb4cf191176dc9021937cb18df859f2ebf797a125f6a72c6bbb33d1accc791d2fe7b785facb196a658073a2026f00ca8a0b87bc7b7981e7a739fdae4d317eceeb665609467411ca6670c457306bd72a2a521aad7f0d3c5a6e094630990d194b0d71e30ca5eb622e03095b1b7c8e97bc4d317e346d8050612c4b663fd2f6e7cb8981da0f13a3ed16578094534b103632e9cc7d571913d3cf5364f56c4baad6fefab2b54a5454a84b00a1be5ec5fcdb0c9884c8e3511d9b032356888af8631f960b08e7b66</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于网易云音乐无版权歌曲</title>
+      <link href="/posts/55047/"/>
+      <url>/posts/55047/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">不给看！气不气！气不气！气不气！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="2d2f62f2af70ec5f6ae6bdb03c9693b8ea30a7612b75afb32578cdc4d2e4eaf1">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e90af557b6fbc25e303d6fa233a9759bf9368fa0e9e463cc9e7d4263ebfba77f3a24b718166a50f74ad8f87c508d4c81ebdf4832a807c8ae206f35060e2a81538198245022388ae0172490dd10ef6d6437c8d214d2b0c00e7c8849c20f0f8d52590b7ea12a5aedd4653c141623ecb5f144ace8d6d6601a0a6ded6ca90d301f865b85d02d4b26a026881478b2cfd61c367dee4df8a61a51f2ab28d00e02a5fca1fdbd13ed9effeb462742e07f979617c0fe702d2443b70fb1054e1fa78855047afacea9a5c00a1766d31f01fa6a3bd6dc6beccad4bb4d7fb9224611e8285b94a11e76aac018162b05e449b65fd98b981d8fdcf8a814233b60da0342b58c1829e3ec2d3501ea520e8f948cc8217b7616984a806769ce5f23371a3c0c541591b13031df398a7a99aec8edcbe8c3c42c635ff4ded7459c4a1cee4276720cae5f7b452c81fc0023ead24dce55f4279e87e9638fbd994e31e2819734d01fe81022e9d70dc0196f76aff49af02a38727ece23110022910702253bbbe773a3ded728bc6b2cf8bba4467d809d5f326fb6b66a8ca600d9dca85b90edbda0cbba63bab928b84b7737937ff37a0b26132825e7e57c57532afe377b0c211f5583c466620f2e8969045952b47525636a84b414619584e4bd82a9eff6b953f25ccccd501a37c4178b7b7c03b1b245fae5bc1e8e58ec7ad5dad6ef17ecb103637930cc3ad158aef34be21a9d2c44c1c40d2203027050ac9ebc2df2fae062980a55d77cb733d277a725f7524e1e736d6f0e6f0a155948137542170004847d94b93ca28f313ec85deaa8b3432eb26c33c661bb265e6a628dce702f0b6f4449461822368f0dced31a251a78b79508955b0836aa6f147238a58f48240362778d609d887ca46592c7c1a95ced9ca0158d54c771803ab01113777b42db5972d3b30c06fb0ffc66d504495aaa051d2e172cc38111d25a4a21cf9468ac59716c17907096f2b622687fcebf2688d5ea267f3335a6a2b744c9025db62b3d01684d5d51ade3ba2fa7ee7f509dc8a25de761bbd2bc465f5e0f35a45bac53b7a6b6ab040a4de4cf911c57134053aceff387644f417973bce2b1d2d5adf9dfa0e59d2cf4e3e55dc55137f31d41358148645d9adab2ea0d62470c5bc203d1a0b2aa9bdfbede7825ba43ac5863f3001ac734aa10eb2c60f4d8d6f021042291af7ed48fddee852ffd5e6e7e59d324d855f1391f7f1b5c1782eaf170f6e02ad779cf444291c931792aeb39c31d7a6c17942ae67a51e0609800dd448f8b9043afd68f026b025e47c6919ed7be8fbd77eb234e556e467a9e86ed3ccd77a6934eccc87a11ef80204d7d1b95d731f76436489c78fa288ffd7d654de3d1b0d7ff464d728922d896db4cc6b19151b5acbdc27ab60f3a38f9896fcf862d6806640f12d615c72d67f2030caa2189eb80541e25d3b02d2795c46dd62023362a340041eac6ae3639e574ea9fb93c55190c6448df56fbd364f4ccd875421e0824bc3af827b6a11c949e99a5c606e058a5868148ce76d300801e3a110db98d0d782d3ae90162eef41fb7adb9f55441b0269b66f5de9214fdc48720fe3ce5d29f5a48137bcc41b329dfc3dee8d413f504a6e6a1b787fc3893ead6a1012db12c520327fe77863b5efd3138fe01085bc5f770e2dc122ea4bde5432d73d769dd1348a6d247beca4b988c35ec04603d8118009c847364e1e5a981f32c77878e1752981a744a285cc8dfa5b5d03e42368e8b78ce405e6226df928a256175ab83df5e6b56ef75310c38ffee2b8e8fa32f92e5d384a2f8b70976aff6706a9269af572ebb381c705fd8ad0ddf9a32b91d5c0320d8f8788d3874536cb8712269ce45a18b6074a0f3f7d87dbd169d7e969f46a3c70c0b89d8627548895051898b0f3b2490603690615c351215cc494caa598d4198d6d8ca35808582a51e3f08e985900e2770972822fd502768eee2644446e182cbac698080f08da53fca8195db71dbb985199fabc54805b6c67fca2b4abc9b6d3cc4b071d2b47f4770dfb0b3a6f9beb95815a34f79f13a22fa8a1787f208acf4d06c83f4a4da98965c67d5dec98349f830d29abcc7aeb4dc81ac79ae586b99cb2fbae94c4fb9a258838d16f3baddb783e64b6f22401204d48991f5cee16ce5a0cdedf3451c2ab6b3f1108757982235c988a80a60446988fa03edd42dde5a922441bc464a657f0e531899f1c727858d2399b564e41621ef67d23d4c16487315243499596c743c123ecbda47e7223f7b9e8dcd5738f546613283c5eba2056324e561ae1b00f4ed626aef030ffcb65357912109d5a51e6515320d9d5c0e0112c8ff458ab3e267220dfe86d2af2faa5cc634bc9e99f8cf675863fbd5de2179c1adbf65d51228f38e5c45025b33f2ba2d3cc78a94e630e57dfaf2d5c7af5cd0b2d3f9fa80b21d725deb163391076886a72cb09b852e5830823d0271d5d8b798c8692bb05d6af0745ac49a397e14b6ca7e4ab2bc88ee99267c6cf0a9a23401ecca873e3b1a871ad5c604f15aeabe25b50480df20e17f0f96ca2cd80bdd32fb208ac608647ba497744066328ff5d1f2b94d18c264d5b71a941920c128a3858ae94d737d7962656b85608c330b3b1791faa4e705e253cbc2914f5b485a130b50fc73271a284c1a8ede57495bdcb39932e3dba2a059677efc409c520e7742ead3f464564a4127c224eb2699bd2ade5b64a23ba038c87b5df0931d219dcd67586f9053feefd632652c2d6f15d6b1d1e7084f83e1ae5297ee4a394d91bc9ab3068a1f39b09f61fc87a6e085a7bd9e4f780f53c8fe28749ccc51824907a50a3ad4fd1cb246e94e9f5c6719e5aa22f824f44b72d324a7ef07b298a3d67c548178c40fd383c5e392baf1150a4f8a6b98db9fa0c0de9213c0989c6d9ee627c0d3817911f0a6169987894abd6e64c63e52c61864b0c2c2dff8e41e9a35d5d5971e1cbdbba29666f0fbfed5f730e47241a11544c0ce0337f096dfba75e30c9ab718f6c85f4f2e09df123cb33909131552b82f07222d55ca4199289df512bd4feeb7c0801d91fe375814bde04fc557e8a4666fdb7b069fa16841d082bfb8036144bc35e96814fdc1f67bef3eb4c7fe372ca5c3805acb54338785e3f0d99761943ab9733bac03a0729dd59b7e92b4db22e0e05485640011ae26f68648024f267746a100508b74884ec4931c26a66f5352e51ffb636c70c4ac129a6f9b6b4e5e2037f7ef8932e72c03c20c08756c54f6c57255a4ce97c9277ca1bff808f44b20aa101fa796ef978c7faa9282db9d594f623fe1d9818f5f3ec163728b10025457879122599d2e0e355da4c78a2b665464fe4deb485e836a595c89e1e4321e7946c809111fd4f55790076a95cd0e0d9fed819a25c3ade0af36eaf8a46c8b1c8c459c54a217319e6feb3c888fb6f0e55b4519be708989eee499f6d254a80f2c67791f158c986b84bfb4dfeb36922b75a2f4a4b262434674e9f20785700e5e6ffb1828119eac5c3a72f449367f03d348fe6049cbe5333d6dd16b0d6ca2dc88c6b45d670830e416224ca626da8cc8057e244715f80476bc020c30850e42b8a55ce1aadd0edb743cac2af2ecd94646031edf701b67dc11af39a337b72f5cc9401abb7b8b0bcadcf25ba94378b3877646873fab4e27e89332f6229d9b203d6619040f91bfcfb7111185be8fcd0e3d83ac7eabc0e68a0c35635d2979c655f173ab6a98204e2c6b91bba871d54e0c0303309ffa9ef64ff08d99223673eec94b6ec9a5cd085167682b7d64d77e93c2a461c1a17989098b58d4c4ec16a0e43e66e5eb17caee976838d7530b923796c173b8e1ee9c962e0ef84b3a8919582a3855b34071020fb8a4fd1a35f396b1bbaf2ac261577cb24c15fdf8e4c8f6ffd01bae2319cf15a00d8275020d746488b12ee9728e652869662fbd33c33fbd8a13defb78d3e3f0ec30e7b9fbc5affa68ce1cdc252e4af727281a3430b2e6f69e22c37825b8be6bef3cb13ed563907cb1a680e06f28589b5fc914f048f5bf1385055bf1e17ca3b0bd8c12d0076880e7243a12f78be758e6eddcaffe5ac45ccc41176279e69d1484ed364cc276dbfa58cb121d72d45d263c363d738ae4dea94ec95c2fadcd305750208ccc44b261b81201d055a0675496507a797e3ea92f37c829a904829cae430782bf84a5d62587d484edd7b71c79aa39d70026a722840fae9f50d4bfb3675f618bef5cd23facc1b1ce39f374624d2b73d45739216698005b4e82c5522584cd6d51b75b7381b99f8ec7090c5fbe9a4dfd5012e0461f69353acc174931cc79328d4eaa21e9b2a16d277552c0404a709451d9789142a4799aae05bfbdfeb693950fe08707258d8870cf3913bbf587d7c3fe490cccfc410370f22e21312226eb4582fdda203e51d3c149f80560e55aee535ca31078d15fb0a99a0c247df13cbdbaf7373e4fc25b2c14200e893618390525ba545719d7bbd40cadfb8392b87bed3fd5897598b28f57020fe7fca3e466a7b917daf8ff3d5bc482efd57ee118377f8b65cbd80934fc8bcf50c5bf90667d3a614bdffe01566e742259623a172f4f26673335937f42b1043b3d43ebbd4becef8b879cc5a468b533bff926c0b85b8cd731281077ddde67f1e06174c03aa956469a992643a866671fc6f14568b4eb40954af6e287088648f1dcbd42c3e11e0259e5b010f61b0a1379ba65e46e8ad56c4a971849b32b304d3cec221b2990f8e6b250d94196b931900282394d5bb94ce8e868906e1f12f4785a3e4f1d52cbe310c664c5ef92753e0bb92d3be557d2b33c9dd4ffe70da309e10edd792dafd1451028b1cdef8fa86fb14d6a777660c4f34ed60c8b022536d4307ea4dc9ee7b018b9f9a76e42b81c4e87354732cd81ce2727e905c10660010a46936101520284b9c06b6c2f25dd11cf51643c8940df3635e9a80773fab734e17347d72c0513393f5a504969c2ff02016423a9a7c6e9690cf4610f24e58ec861fd15c24ef6a85ebd7251c2a9d0d463dc327461216a3a7daea1e2c0cccd4e5cef5c2e127ee20a4f79677cc19ebb68e0fba5a3a2433d4320fa38fa334a69e2e6cd24c02f371f13d1e2586edcefb3967209989db3bb4ff90d5ddfe14502347e0f506e7c85bccc156242c1ee4e1fbdcb20137ca5f6ad900973a5bff497431cd8feec7c25bc4cff83508f4370600e2249ab56259e9570b56d1450b8eac4c11a48c3afb99a94bb0b1be5cd32f8e234164f6f86f482b2644e101d21bfb6c6c978586926944dbf45280fcc4d3839242032534195a868d96411fb8a82311092e7a332bc40fd94725de9193f3187247caba48e5b3444c9cbe038a05ed5ea6998fc6476db0e53e7a0762662a5affa19de2ac8e4ca55f5cdb8fc003b23d1942140272e2cb7c3dfc251e017d091476fe2c400d7edb732af2ab792ada9f4d52dc933c8d431c83fb6682af0dbe37922a9bcdfca59f49e8de9f19df889a626e9039a0ff6e6dd1dab61af5ab8fc826c515b632dca653411bc86c5fb47b9e45afb29c5051b3cf6b5e494a7b3c4881ec34b5553de94ccc766700ea621dc3b5742876a4d8cc3ef9867c99e9d7521310dbb04882818ff507c0536d5a2868d7f3601ce67d2e1045bb86338fa86593a1824d62d7c04ea22f8e1e24be863d60ba7952b9cc183f494caaef0656fa8e157792826aeb2e04b389a82b4ad8a97087130866de7526ddbad7305f20ef25b4274098e51c9028a17fd0cf2172a49b56177a2652a478d7d5aef251dfbdbdd2e13a1afa7c89c0061ef022d678b2493b71d91da718de292bf52c6fca65c541ba1e8e69357c185786f15c7a25dae601a23b61ffdea66df7bb52eb94360f72172acce032ec44b12b072ec0eebb2ef176384b7719d06c247630f1d4eca49ab5152c276ed1ebc73bebe8898e3a5c31f499bbaa430a6b78d3f414ac4f1fdb60bc4b7209a77e1531fc8856a202db78ed3f880ce9465f08b2172149125ae4b1b4ad5e28a0d57e50a5d026859b9624fb9dac695fb7fa19af2820e7c7db26f521edf9b7796910e9304440d764ce5033630ed7f375f713fb23e09b4aa6044ff07184e003182ab5713456baef8c7826531b2fd7f5d260aa92594e0454aa771e24293f88d8f47cc596880b2634ec13e1b6869de90af375a95a846a6ea6942e0b1e57a3090cb8c044b388bc0286e9142b5df150b6caa4cc49366c98e27090c95c4176ed2dbf612380cd65de20d1c178481250423219692fd56f3ed5b63e56e436dd0d5b37152154ff43e9b36c4c6475be18cd68e9dab130cdd21351fad75b63acb2b748240296e42c647ca042e4be75c487ec645e18296a214818fc9234f209e9e0ed6cf0baf73acd852abc0d54065796280b411a6758b8d60e426827452499f3a79779bbbc4cc64d34e5460baba60b602d9948748a8ad0a641c1bd9f71cc30ffd63cb6b68071412d2ace0316e195c654120672788c33e6c1f979bd58e1fce33b7782f0a3494b31a63c3bfe7c5b11fe0e5b4be48355eb83cd151ad9e0296319ea79ef3997605c56234e51a37e8785d3a4722e3dc011a92496e63a0a4d563b2d3db5fe4604da201c44be36535e9c3420fc4de525c20f841621ba29d1e82589878b10445714b8eec45797606fc6b78422d8cc3ac015976ce309216032f042beedfec2d60fd940e94a6725296ef6cd5e3d2dd70f7c525a7c6f2863d528c51967f6f3e40ad3e8dcbb59e7d5832568a073d256b433de13c2ce269fd349e63c1599704ea9418a5e6550064e732243d4be6e650030e8c707e270a25ffad8cfe7833fc30d975a5f654177f14516938e26a3c14a6a1c6e9f8ac1a2ed785f4712d825b3d7988d39213254069895efe173a2e678cd266f4ede33b2b4c730072210d6b37445c98d3dbc7af307d3ef1abd96459f8274a77bf749e780b907bdd92a1f9759f25a2dc84f1ecea345367215a24e8149dd185c3e068acec6333a2ddae78a06e0d5a2fbe53e9de5acd491b2d996a92181aef8d5ad8a23a484d05fe643fbd75b242817b25b64bf596e59adbe1ab2619564536b7daaa1b67650d584da0d4e06d62595aeabe704bd35331c4eae4d1db2fd99e72798c2dec40c4f1af8c4456b168ac02beee765c1fa9de17a513936dffcc02dbcd94bd03bebb1086fe9c95153fc788ab50e8a650c8ef8bb4d25daee7a9876332ffc298a9cfa8154674ff67f78670e18a15f09ece27dec47e4cdabcae1388bca9a32225a3ae2d364c3bc1b5ed0bafee1deba8b3538091c2fe966b909679402666522da12ab6a9c742c5677a5e7d6fda05906a0c1accd943784dab49a5f29f335d0bc3d6799dbf6a6ef620817535e6ec8b76fffeabbab1b4e7b3df1730dbc13571bcdf851cdf6a1bf4d0c18a94789f049b96be6ec7ed817b30732ab841610d1115aabe794ac79074be038baa563b04769d987bbc04c1ffc26a71d50ff0e5958290c15094eaa5ffcffefb0fac98fd9fc36963148a82f3fc14e49d41f3230f6eeed513d9fc8745803b96015f173cc2452f81ca68f27e501d77372622adaee7f2ee3bcb833c05b63774a8acf870acfb3c9ff989ef45a5e05980536ed9569af7ec2816e1c2f3c5b99f31c6375e9e510cce3070fdbffba7c2d32666c22b6e5ca9a5450e0f21d8c3547081b9a015553882749edd9187b8ec7a45f560cf5406405b01277c387e6a5266000585fd626f8b36f279bc1a2222d65d449c2865142de4e6f13cf7ddd33b819b7a20e58d9b7f8694cdb6a7c789b00811b9422ba57d2aaa31f8f9528a2e59b708df0aa57651ddda578638e065d7a481bf8e44572b12dd766165bfbc4182b752dc0916db3b5ab3f23d2e7bb7e9547bc28eef5ac486eb692fc1e1e9696d34455b0c598566e1a1874b7cf9e631610f67317af2c73b4e72ac11840e7a79f0dcaee5d5279fa084617115069529d06d3d77d29e6788d8a0437347484ecb545a2b8ee9417213a84e788d07109f273a86e536aa493a96732ee89f5f1bc4ce6d54509197ea739569583b8abf8922cd26a7c3d2aad27286d1aa580a7ee47fad7791b5a09415aca6f9dff63984417dea44960476738cbe5301134ef8326e13b32a2c4b902009eccbfa04da7c196cbecde163bba5eafa0e14c7101313dff44e67cef517a057456990969e75ff8609c698c14439bd348ade8b4092a1a33e4d9f75b619e8e1da9c602259ae1355a0ab9bd4775214dc4debe188b51d28d5b7b0afc624d91059f210f79944da45ea31693108b3352fad68fe1747c2e7409f14fdf7917b9edd820e16c9080ffcd538aca72b11d13706d8fb6b82e2bed2a7601d3fed7747994b9ee91b69c1a75cdc3b75c0e64d53af8d93baf14dd3c6ea7137a12b1d5e8b7e341719b6375ea95e4e6a987401326dbdcc1b9c6fc957e3d73f6b2f8b38719f3f817a85517ba7ef815d5fa2ebd42da00df4d29a48b1927c6b239c517f88dde8aaeafbe01cf797fbab39ecf081fd676723e2707fc1b0c547221242ef1469d1b0144e48ddc603ea53dc3300eeb5b603c60724371fd09f024b96387f5ed844f3adcd3eecbac57fd4504c9f104d3c4980fabcca53b934609aac1a16692dfe5fb980b01ba5405854076a3f13b4acf46ee2e8cfacde0a50cf0137a52f38203bdc7714fd7da67e779a6087d8a65785ff5ba508fe922e2174a4a669a8bd4b94ba35b5915aa0bd1d62ae50d9a84b996e93589f76ae42157bd664d601264bce9c7beeb438ff0b0cfb3fb44ccdc875094a5e98c8be7e6f5a8c3ebd06fdf22f20aafa6db34362a44f8d50027da453de07cb029cf03f26b76037ec5833035fc801db04d179da7b2cecfd02399747b7cb474879513b38921e481f52311c622c287ad3b11dd2284b2b9cf3da23bae841365a4191fc4b3c4cb552d8ebbfc89954f9bf6a9ef0c6d2999f16d2f76abe992b79f6c2654ecfb3b76ea3ccb5f1b4143a4bcc0f194f82b138483d51e449b3f3ed4333782ef831e41664740efee8e30811ba78356aac3f12253d24a3cb94a0f6a7d0323889c954afc20008b565de076c09d0dba41083b7c6a408bfe31178ecc7a3061ad3f75d5ca559c5a9e6beaebb064bec3c0aaef0f812fd8a936217afd9d1ec334bf15c61d4de106c343d49b94eee1d7b7ee827da6a00bc806b007a8aa3483e2e980d8edd9221880d67929a4bebfd882958e98127fd0d0d45000fec9e7c014d56ac429a5f31834f6a6b6c8830620e6fc1904270e47a2a6235e66dfb4cf191176dc9021937cb18df859f2ebf797a125f6a72c6bbb33d1accc791d2fe7b785facb196a658073a2026f00ca8a0b87bc7b7981e7a739fdae4d317eceeb665609467411ca6670c457306bd72a2a521aad7f0d3c5a6e094630990d194b0d71e30ca5eb622e03095b1b7c8e97bc4d317e346d8050612c4b663fd2f6e7cb8981da0f13a3ed16578094534b103632e9cc7d571913d3cf5364f56c4baad6fefab2b54a5454a84b00a1be5ec5fcdb0c9884c8e3511d9b032356888af8631f960b08e7b66</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
       <categories>
-        <category>网易云</category>
+          
+          <category> 网易云 </category>
+          
       </categories>
-      <tags>
-        <tag>网易云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网易云音乐创建外链播放器</title>
-    <url>/posts/1823/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">不给看！气不气！气不气！气不气！</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="052ba4bd870dd930ebe9700727bf5fcb13aedb2d5a73f954493b8921a8982992">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e90af557b6fbc25e303d6fa233a9759bf9368fa0e9e463cc9e7d4263ebfba77f3a24b718166a50f74ad8f87c508d4c81ebdf4832a807c8ae206f35060e2a81538198245022388ae0172490dd10ef6d6437929d7d0f637e0e4cbea9d4b8d2874a4808aa71b08ef06e102df84b54e1f723f3efba52e3a99fb9e45a8d47f312f0a330e21dac8541634f08258427a9236029ce77719e4265c333d6f023d33da7ea4957691ff47d48c36c3ff2915c3db428920dcae929f73f756f9c2270e5efb4c2d47c9ae9fd46d91a97e983393f7fdc9a7dfdaf5b6306141cf0bdd72fa0f3486397c405ba30c6c64420e2604645a2fc449991ebb9220303b4668ac01a14d52222e95804d6018c4e3cc3f219e4f016d4b6de7408c75210cb8b62a609395ecebcb2e7c9d7f19bf4bee443607eff3fe03709dbe68f99f29c29f22994ef11868dcc5eb265acd7d17161a0c494ea2f22b844d18af456f372138710115dc21066d7b4188cae8dd5d7c05826f060408b396ea660785e834009b468a18d0502c6dda2f9d099aa3c7aa027f732500868458e87b467654d02fb027697ffeb74cbbc2b91aa768381b4bc89c7848a21ba1f37238fb1394be4565209c3e933b58583218f758a4643c36d5cfb6c8011f260864f1c158d82a3b753f7e6669fc3cbf1e82e52934a8e109b0db47edb7a2cb4424df5ccb4f57d87d619fd1504bc752d2c7f2cd29316a35a9cc6460fafed267d846e665ea99755d9d6e93886705a9303592fad6e9cdfe9568f174818762c5677973c5f4207a7f378750ecc412d0096b50943da633a3e4c65341d0288a5d51e56c8f0bc0dd7e0072ef24b47800621f21c1285f0ffe25970af48b7b22ece278562a1c6bb4d03a4cec15643b265b7019cddc63c95128a7de0b0e88cab412a8bd3cac8f049f233098fc22715b208eda9b37c8cbda089d64f90fe212fbb7ec4e0f5ab3de1690a54d0573ac3ee8f06c8ffe0c47e412313877291730fa4340600bc931f3e0c0db011ede292c974f7d36d98a850975026c8b204f2c41da20e876f852888b0dc47c3b757d92ff2bf60b91e064b18bdc3e2f838703cc640071347c1de7e809aeff8caea4c39705c76d46d88c0a1f4c6e36f7f589c49b01e8a1bfd977e01e4d4d98a9d91019ec7f3fc4ef03e6b28bc8b31600802a79356b4c9cc4a43640699a98096f55d28326c61d7e5c1e0915f8520fad416fe8728a5729d11cad685deb699b82270a7a382221ba57976c86fbee2e6960a3a854f2ce13ec7790fb2ba61238fb424c7e379aa89c64270764b7c7b1d0eaf712f0c6f94e8c342e7827e752d9b243cc16f1e9699a8c91fd7e97fbebfc191fb3e1561aee620135e1e1d3c9dcb327fb5adb57ce28ce8b05c5c1b68f7f0f95054cd274915784439e16566ec102c534d4ae23c7925ee1069e23a7918d8b98c3b2d20c2ac22665f0d2ed6b1fa5cf8b954ae27734bc49cecef3475e0469592be58b24e5e2e3102c74ccb6d6710d2359d9ade6dc654102202197c8245122be523a30784d269048c64da8c08ac9b35dc5536e2747152a09a4fefcbaf1de175ec105d998b2086f294ec3432d4aa1aec383c648b941248d161d146519b1c807000c114208c36e643c2cfa578f325e93bb174499a59c9bcc2028988391c1d9bab46402b7f1a9e80386da429cab67a3fefdb1b1e09808116273b0109a33a987f6abfdf60dd02e97806f2a663cf5ac5f68c356e2545d5c0286f16a9529a10edfe552bcd65fb94c536c7bb01a33a7a3025f1f9bf5a8608df8298e0f4d5e76f37eddb49eaf12d0bbd44c7c2fde47d322cbe4a6908defa35b68db35db52875e00ee622eeb1e01338ff23f549b4e74c7cc24deafc8008dd01e6b0fb39a987ccd75b624b061a2bbcbf12c48c9bc05860d7784a9326fda855205835ad4bc39800f22d4e4ba39365a338dc49d4888ba3179635efe9a5d8dc593de28883ca87c8ff94edfe19de4c33f771a2c6aa40fc8a8f7f1802997e7d6723d2ef6087eb47514834a6a4903a01ca6a217fa9ed7eab26775a527d5346e6a8b76f06611dcb832d65fce3c09c6986b9055ae94e09e3beee5b763fb69170a8a776ce97319633d49914ee912bc99a27ba19536cf60897745aa0e4869684c913a1bea7ebdf689ff6828dc56c40a01e5decbe528f281852f1c0942784198647d2ed024b6e4b40e1a400172318c1bd3c3117d61e33b14a1fbc2a140f0e170bd0ea0fdf73494f4b2c88a9859d31b0edeb186fb18f3c35740e8ac8180137933a5be60df967a96052dce7623632bcd89ef48fb5d758a0a103484e06</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+        <tags>
+            
+            <tag> 网易云 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网易云音乐创建外链播放器</title>
+      <link href="/posts/1823/"/>
+      <url>/posts/1823/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">不给看！气不气！气不气！气不气！</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="052ba4bd870dd930ebe9700727bf5fcb13aedb2d5a73f954493b8921a8982992">2e761c932dfa7a88e6f0c4e9d651c53f8a965021fb1b04a5addd0c373097ceddd56c6c82c0260a789f5c63a5f7dfb4a98a19fb85333c56d1101b391383eea7701feb29d8d03cb4430ca2a0cf9284643245d8cffd5b5a2fc541f6f841befb0f524f65e5b4b460a3f732b35a5006d6bb964c80209e58463983eee49614c843be5cd669dfacfabe7cda0d690504146fa6dd8e12684ce6a7e4b25922b1e4cdbf8f3f8fe4835afacf7537e93c0cce05acd246d27bc3120aed833049e0416b48c9bf477942982454191ec9e94ac4c0989775eab78ab5880853bf50cba22497332425087290b3836607fe828904240f203d6b45ed7006871941323d2d5b65a51db93d622348572a13bfb8bdfd596a2e1be9e4e90af557b6fbc25e303d6fa233a9759bf9368fa0e9e463cc9e7d4263ebfba77f3a24b718166a50f74ad8f87c508d4c81ebdf4832a807c8ae206f35060e2a81538198245022388ae0172490dd10ef6d6437929d7d0f637e0e4cbea9d4b8d2874a4808aa71b08ef06e102df84b54e1f723f3efba52e3a99fb9e45a8d47f312f0a330e21dac8541634f08258427a9236029ce77719e4265c333d6f023d33da7ea4957691ff47d48c36c3ff2915c3db428920dcae929f73f756f9c2270e5efb4c2d47c9ae9fd46d91a97e983393f7fdc9a7dfdaf5b6306141cf0bdd72fa0f3486397c405ba30c6c64420e2604645a2fc449991ebb9220303b4668ac01a14d52222e95804d6018c4e3cc3f219e4f016d4b6de7408c75210cb8b62a609395ecebcb2e7c9d7f19bf4bee443607eff3fe03709dbe68f99f29c29f22994ef11868dcc5eb265acd7d17161a0c494ea2f22b844d18af456f372138710115dc21066d7b4188cae8dd5d7c05826f060408b396ea660785e834009b468a18d0502c6dda2f9d099aa3c7aa027f732500868458e87b467654d02fb027697ffeb74cbbc2b91aa768381b4bc89c7848a21ba1f37238fb1394be4565209c3e933b58583218f758a4643c36d5cfb6c8011f260864f1c158d82a3b753f7e6669fc3cbf1e82e52934a8e109b0db47edb7a2cb4424df5ccb4f57d87d619fd1504bc752d2c7f2cd29316a35a9cc6460fafed267d846e665ea99755d9d6e93886705a9303592fad6e9cdfe9568f174818762c5677973c5f4207a7f378750ecc412d0096b50943da633a3e4c65341d0288a5d51e56c8f0bc0dd7e0072ef24b47800621f21c1285f0ffe25970af48b7b22ece278562a1c6bb4d03a4cec15643b265b7019cddc63c95128a7de0b0e88cab412a8bd3cac8f049f233098fc22715b208eda9b37c8cbda089d64f90fe212fbb7ec4e0f5ab3de1690a54d0573ac3ee8f06c8ffe0c47e412313877291730fa4340600bc931f3e0c0db011ede292c974f7d36d98a850975026c8b204f2c41da20e876f852888b0dc47c3b757d92ff2bf60b91e064b18bdc3e2f838703cc640071347c1de7e809aeff8caea4c39705c76d46d88c0a1f4c6e36f7f589c49b01e8a1bfd977e01e4d4d98a9d91019ec7f3fc4ef03e6b28bc8b31600802a79356b4c9cc4a43640699a98096f55d28326c61d7e5c1e0915f8520fad416fe8728a5729d11cad685deb699b82270a7a382221ba57976c86fbee2e6960a3a854f2ce13ec7790fb2ba61238fb424c7e379aa89c64270764b7c7b1d0eaf712f0c6f94e8c342e7827e752d9b243cc16f1e9699a8c91fd7e97fbebfc191fb3e1561aee620135e1e1d3c9dcb327fb5adb57ce28ce8b05c5c1b68f7f0f95054cd274915784439e16566ec102c534d4ae23c7925ee1069e23a7918d8b98c3b2d20c2ac22665f0d2ed6b1fa5cf8b954ae27734bc49cecef3475e0469592be58b24e5e2e3102c74ccb6d6710d2359d9ade6dc654102202197c8245122be523a30784d269048c64da8c08ac9b35dc5536e2747152a09a4fefcbaf1de175ec105d998b2086f294ec3432d4aa1aec383c648b941248d161d146519b1c807000c114208c36e643c2cfa578f325e93bb174499a59c9bcc2028988391c1d9bab46402b7f1a9e80386da429cab67a3fefdb1b1e09808116273b0109a33a987f6abfdf60dd02e97806f2a663cf5ac5f68c356e2545d5c0286f16a9529a10edfe552bcd65fb94c536c7bb01a33a7a3025f1f9bf5a8608df8298e0f4d5e76f37eddb49eaf12d0bbd44c7c2fde47d322cbe4a6908defa35b68db35db52875e00ee622eeb1e01338ff23f549b4e74c7cc24deafc8008dd01e6b0fb39a987ccd75b624b061a2bbcbf12c48c9bc05860d7784a9326fda855205835ad4bc39800f22d4e4ba39365a338dc49d4888ba3179635efe9a5d8dc593de28883ca87c8ff94edfe19de4c33f771a2c6aa40fc8a8f7f1802997e7d6723d2ef6087eb47514834a6a4903a01ca6a217fa9ed7eab26775a527d5346e6a8b76f06611dcb832d65fce3c09c6986b9055ae94e09e3beee5b763fb69170a8a776ce97319633d49914ee912bc99a27ba19536cf60897745aa0e4869684c913a1bea7ebdf689ff6828dc56c40a01e5decbe528f281852f1c0942784198647d2ed024b6e4b40e1a400172318c1bd3c3117d61e33b14a1fbc2a140f0e170bd0ea0fdf73494f4b2c88a9859d31b0edeb186fb18f3c35740e8ac8180137933a5be60df967a96052dce7623632bcd89ef48fb5d758a0a103484e06</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
       <categories>
-        <category>网易云</category>
+          
+          <category> 网易云 </category>
+          
       </categories>
-      <tags>
-        <tag>网易云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>迪兰RX580 2048SP刷VBIOS成功吃上黑苹果</title>
-    <url>/posts/56891/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="ATI-ATIFlash"><a href="#ATI-ATIFlash" class="headerlink" title="ATI ATIFlash"></a>ATI ATIFlash</h3><p>下载地址：<a href="https://www.techpowerup.com/download/bios-flashing/" target="_blank" rel="noopener">https://www.techpowerup.com/download/bios-flashing/</a><br>AMD显卡下载AMD/ATI ATIFlash，下载解压到C:/atiflash<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/material/Pictures/20190418-1.png" alt="图片"></p>
-<ol>
-<li>备份现有ROM，进入目录使用管理员身份运行amdvbflashWin.exe，选择需要导出的显卡ROM，我一般放到C:/atiflash下，方便命令解析<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-2.png" alt=""><br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-3.png" alt=""></li>
-<li>下载需要替换的ROM，也放入C:/atiflash下。下面我会讲解ROM的选择要点</li>
-<li>打开使用管理员身份运行的CMD或者PowerShell，进入atiflash目录运行 .\ATIWinflash -unlockrom 0解锁ROM</li>
-<li>运行 .\amdvbflash -f -p 0 .\Sapphire.RX570.4096.Elpida.ORI.rom 刷入ROM，当看到类似下面这样的信息说明刷入成功，可以立即重启系统<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-4.png" alt=""></li>
-<li>进入系统发现分辨率没了，属于正常情况，一般不要动，Windows自动加载“新”显卡，对显卡安装驱动</li>
-<li>打开GPU-Z可以看到“新”显卡的信息</li>
-<li>对于一些定制版本的马甲显卡，如RX580 2048sp可能之前不能关闭CSM，现在刷入本核心的ROM（RX570）后，可以重启电脑进入BIOS关闭了</li>
-</ol>
-<p>注意：如果黑卡了，可以找个WinPE进入命令行刷回原ROM</p>
-<h3 id="ROM的说明"><a href="#ROM的说明" class="headerlink" title="ROM的说明"></a>ROM的说明</h3><ol>
-<li>核心一定要准确，AMD的卡肯定不能刷入NVIDIA的ROM，版本太低或者太高的ROM大部分也不能刷入</li>
-<li>各品牌之间大部分是可以互刷的，但不推荐，慎刷！</li>
-<li>显存大小必须一致，VBIOS都对显存做了校验</li>
-<li>显存产商必须一致！刷似乎可以刷入（没试过），但容易黑卡</li>
-</ol>
-<h3 id="Miner-Tools"><a href="#Miner-Tools" class="headerlink" title="Miner.Tools"></a>Miner.Tools</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol>
-<li>刷 bios 前注意备份原版 bios，确保你准备刷入 bios 支持你的显卡，比如显卡的型号，显存容量，显卡型号，公版或者非公版，这些都可能导致刷写失败。</li>
-<li>刷写 bios 的时候，尽量只插一张显卡，并且插在 16x 接口上，不要使用显卡延长线。</li>
-<li>刷bios有风险，请谨慎操作</li>
-</ol>
-<h3 id="刷bios"><a href="#刷bios" class="headerlink" title="刷bios"></a>刷bios</h3><ol>
-<li><p>使用最新的 gpu-z备份显卡 bios，点击如图所示的箭头，选择保存到文件，然后选择保存的位置并输入文件名称，确定即可。备份的显卡 bios 的后缀为 rom<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-5.png" alt=""></p>
-</li>
-<li><p>使用 atiflash 刷写 amd 显卡的 bios。<br> 首先把atiflash（<a href="https://pan.baidu.com/s/1b8vz4a" target="_blank" rel="noopener">https://pan.baidu.com/s/1b8vz4a</a>  ） 文件夹解压放到 c 盘根目录下，以管理员身份打开命令提示符。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-6.png" alt=""><br> 输入 cd  /   返回 c 盘根目录，输入 cd    atiflash_274 可以进入atiflash_274文件夹所在目录。</p>
-<p> 输入 AtiFlash.exe    -unlockrom    0 并回车，解锁显卡 bios。回车后会显示 rom    unlocked，表示 bios 已经解锁。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-7.png" alt=""><br> 然后输入 AtiFlash.exe    -f    -p    0    xxx.rom 回车刷入 bios。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-8.png" alt=""><br> 之后，重启即可。</p>
-<h3 id="如果很不幸刷黑了，可以参考以下"><a href="#如果很不幸刷黑了，可以参考以下" class="headerlink" title="如果很不幸刷黑了，可以参考以下"></a>如果很不幸刷黑了，可以参考以下</h3></li>
-<li><p>准备一张好的显卡作为输出卡插在主板 16x 接口上，将刷黑的卡使用显卡延长线插在 1x 接口上。（主板或者 cpu 含有集成显卡或者核心显卡的，救活的思路类似，但可能需要在主板 bios 中设置集显或核显的优先级为最高，有点主板中还需要设置集显为 always    on 状态。因为主板型号及 bios 版本众多，故无法详述）</p>
-</li>
-<li><p>进入 windows 系统，如果可以在设备管理器里面识别到刷黑的显卡，就比较简单。</p>
-</li>
-</ol>
-<p>使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AtiFlash.exe	-i	0</span><br></pre></td></tr></table></figure>
-
-<p>确定显卡信息是否是输出卡，如果是，按照以下操作刷入备份的 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">backup.rom：AtiFlash.exe	-f	-p 1	backup.rom</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>如果不能识别刷黑的卡，可以卸载并重装驱动，看能否识别. </li>
-</ol>
-<h3 id="如果-windows-下不能识别，需要在-dos-下刷"><a href="#如果-windows-下不能识别，需要在-dos-下刷" class="headerlink" title="如果 windows 下不能识别，需要在 dos 下刷"></a>如果 windows 下不能识别，需要在 dos 下刷</h3><ol>
-<li><p>准备一个可以进入 dos 的 u 盘，将备份的 bios 放在atiflash_274文件夹中，再将 atiflash 文件夹放在 u 盘根目录中。</p>
-</li>
-<li><p>将刷黑的卡插上，改 bios 为 u 盘启动优先。</p>
-</li>
-<li><p>从 u 盘启动后，找到 dos 工具选项打开 dos，输入<br> c： 查看 c 盘</p>
-<p> dir： 查看当前目录文件详情</p>
-<p> 以此方法找到 u 盘文件位置</p>
-</li>
-<li><p>输入AtiFlash.exe    -i 查看显卡信息,如果可以识别，输入AtiFlash.exe    -f    -p    backup.rom 刷入备份的 backup.rom</p>
-</li>
-<li><p>重启看显卡是否救回</p>
-</li>
-</ol>
-<h3 id="如果在-dos-下还是不能识别，可以尝试盲刷"><a href="#如果在-dos-下还是不能识别，可以尝试盲刷" class="headerlink" title="如果在 dos 下还是不能识别，可以尝试盲刷"></a>如果在 dos 下还是不能识别，可以尝试盲刷</h3><ol>
-<li><p>制作一个简易的 DOS 启动 U 盘；</p>
-</li>
-<li><p>建立一个 Autoexec.bat（内容： atiflash    -p    -f    0    backup.rom）；</p>
-</li>
-<li><p>将备份 backup.rom 和 atiflash 文件全部放在 U 盘根目录；</p>
-</li>
-<li><p>将刷黑的卡单独插在 16x 接口上，设置 u 盘为第一启动；</p>
-</li>
-<li><p>重启，等待一分钟后按 ctrl+alt+alt，拔下 u 盘；</p>
-</li>
-<li><p>重启查看显卡是否救活 </p>
-</li>
-</ol>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 网易云 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>迪兰RX580 2048SP刷VBIOS成功吃上黑苹果</title>
+      <link href="/posts/56891/"/>
+      <url>/posts/56891/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="ATI-ATIFlash"><a href="#ATI-ATIFlash" class="headerlink" title="ATI ATIFlash"></a>ATI ATIFlash</h3><p>下载地址：<a href="https://www.techpowerup.com/download/bios-flashing/" target="_blank" rel="noopener">https://www.techpowerup.com/download/bios-flashing/</a><br>AMD显卡下载AMD/ATI ATIFlash，下载解压到C:/atiflash<br><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/material/Pictures/20190418-1.png" alt="图片"></p><ol><li>备份现有ROM，进入目录使用管理员身份运行amdvbflashWin.exe，选择需要导出的显卡ROM，我一般放到C:/atiflash下，方便命令解析<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-2.png" alt=""><br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-3.png" alt=""></li><li>下载需要替换的ROM，也放入C:/atiflash下。下面我会讲解ROM的选择要点</li><li>打开使用管理员身份运行的CMD或者PowerShell，进入atiflash目录运行 .\ATIWinflash -unlockrom 0解锁ROM</li><li>运行 .\amdvbflash -f -p 0 .\Sapphire.RX570.4096.Elpida.ORI.rom 刷入ROM，当看到类似下面这样的信息说明刷入成功，可以立即重启系统<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-4.png" alt=""></li><li>进入系统发现分辨率没了，属于正常情况，一般不要动，Windows自动加载“新”显卡，对显卡安装驱动</li><li>打开GPU-Z可以看到“新”显卡的信息</li><li>对于一些定制版本的马甲显卡，如RX580 2048sp可能之前不能关闭CSM，现在刷入本核心的ROM（RX570）后，可以重启电脑进入BIOS关闭了</li></ol><p>注意：如果黑卡了，可以找个WinPE进入命令行刷回原ROM</p><h3 id="ROM的说明"><a href="#ROM的说明" class="headerlink" title="ROM的说明"></a>ROM的说明</h3><ol><li>核心一定要准确，AMD的卡肯定不能刷入NVIDIA的ROM，版本太低或者太高的ROM大部分也不能刷入</li><li>各品牌之间大部分是可以互刷的，但不推荐，慎刷！</li><li>显存大小必须一致，VBIOS都对显存做了校验</li><li>显存产商必须一致！刷似乎可以刷入（没试过），但容易黑卡</li></ol><h3 id="Miner-Tools"><a href="#Miner-Tools" class="headerlink" title="Miner.Tools"></a>Miner.Tools</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol><li>刷 bios 前注意备份原版 bios，确保你准备刷入 bios 支持你的显卡，比如显卡的型号，显存容量，显卡型号，公版或者非公版，这些都可能导致刷写失败。</li><li>刷写 bios 的时候，尽量只插一张显卡，并且插在 16x 接口上，不要使用显卡延长线。</li><li>刷bios有风险，请谨慎操作</li></ol><h3 id="刷bios"><a href="#刷bios" class="headerlink" title="刷bios"></a>刷bios</h3><ol><li><p>使用最新的 gpu-z备份显卡 bios，点击如图所示的箭头，选择保存到文件，然后选择保存的位置并输入文件名称，确定即可。备份的显卡 bios 的后缀为 rom<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-5.png" alt=""></p></li><li><p>使用 atiflash 刷写 amd 显卡的 bios。<br> 首先把atiflash（<a href="https://pan.baidu.com/s/1b8vz4a" target="_blank" rel="noopener">https://pan.baidu.com/s/1b8vz4a</a>  ） 文件夹解压放到 c 盘根目录下，以管理员身份打开命令提示符。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-6.png" alt=""><br> 输入 cd  /   返回 c 盘根目录，输入 cd    atiflash_274 可以进入atiflash_274文件夹所在目录。</p><p> 输入 AtiFlash.exe    -unlockrom    0 并回车，解锁显卡 bios。回车后会显示 rom    unlocked，表示 bios 已经解锁。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-7.png" alt=""><br> 然后输入 AtiFlash.exe    -f    -p    0    xxx.rom 回车刷入 bios。<br> <img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://raw.githubusercontent.com/Belial-beast/blogtc/master/img/20190418-8.png" alt=""><br> 之后，重启即可。</p><h3 id="如果很不幸刷黑了，可以参考以下"><a href="#如果很不幸刷黑了，可以参考以下" class="headerlink" title="如果很不幸刷黑了，可以参考以下"></a>如果很不幸刷黑了，可以参考以下</h3></li><li><p>准备一张好的显卡作为输出卡插在主板 16x 接口上，将刷黑的卡使用显卡延长线插在 1x 接口上。（主板或者 cpu 含有集成显卡或者核心显卡的，救活的思路类似，但可能需要在主板 bios 中设置集显或核显的优先级为最高，有点主板中还需要设置集显为 always    on 状态。因为主板型号及 bios 版本众多，故无法详述）</p></li><li><p>进入 windows 系统，如果可以在设备管理器里面识别到刷黑的显卡，就比较简单。</p></li></ol><p>使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AtiFlash.exe-i0</span><br></pre></td></tr></table></figure><p>确定显卡信息是否是输出卡，如果是，按照以下操作刷入备份的 </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">backup.rom：AtiFlash.exe-f-p 1backup.rom</span><br></pre></td></tr></table></figure><ol start="3"><li>如果不能识别刷黑的卡，可以卸载并重装驱动，看能否识别. </li></ol><h3 id="如果-windows-下不能识别，需要在-dos-下刷"><a href="#如果-windows-下不能识别，需要在-dos-下刷" class="headerlink" title="如果 windows 下不能识别，需要在 dos 下刷"></a>如果 windows 下不能识别，需要在 dos 下刷</h3><ol><li><p>准备一个可以进入 dos 的 u 盘，将备份的 bios 放在atiflash_274文件夹中，再将 atiflash 文件夹放在 u 盘根目录中。</p></li><li><p>将刷黑的卡插上，改 bios 为 u 盘启动优先。</p></li><li><p>从 u 盘启动后，找到 dos 工具选项打开 dos，输入<br> c： 查看 c 盘</p><p> dir： 查看当前目录文件详情</p><p> 以此方法找到 u 盘文件位置</p></li><li><p>输入AtiFlash.exe    -i 查看显卡信息,如果可以识别，输入AtiFlash.exe    -f    -p    backup.rom 刷入备份的 backup.rom</p></li><li><p>重启看显卡是否救回</p></li></ol><h3 id="如果在-dos-下还是不能识别，可以尝试盲刷"><a href="#如果在-dos-下还是不能识别，可以尝试盲刷" class="headerlink" title="如果在 dos 下还是不能识别，可以尝试盲刷"></a>如果在 dos 下还是不能识别，可以尝试盲刷</h3><ol><li><p>制作一个简易的 DOS 启动 U 盘；</p></li><li><p>建立一个 Autoexec.bat（内容： atiflash    -p    -f    0    backup.rom）；</p></li><li><p>将备份 backup.rom 和 atiflash 文件全部放在 U 盘根目录；</p></li><li><p>将刷黑的卡单独插在 16x 接口上，设置 u 盘为第一启动；</p></li><li><p>重启，等待一分钟后按 ctrl+alt+alt，拔下 u 盘；</p></li><li><p>重启查看显卡是否救活 </p></li></ol>]]></content>
+      
+      
       <categories>
-        <category>黑苹果</category>
+          
+          <category> 黑苹果 </category>
+          
       </categories>
-      <tags>
-        <tag>黑苹果</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 黑苹果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
