@@ -47,24 +47,26 @@
     <url>/posts/21026/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="服务器地址-amp-端口"><a href="#服务器地址-amp-端口" class="headerlink" title="服务器地址&amp;端口"></a>服务器地址&amp;端口</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">game.dalaoa.top:25565</span><br></pre></td></tr></table></figure>
 <h1 id="7月21日更新"><a href="#7月21日更新" class="headerlink" title="7月21日更新"></a>7月21日更新</h1><ol>
-<li>添加虚无世界</li>
-<li>添加幸运方块</li>
-<li>添加更多实用装备2(ExU2)</li>
-<li>添加无尽贪婪</li>
-<li>添加拔刀剑</li>
-<li>添加拔刀剑日系附属包</li>
-<li>时装工坊</li>
-<li>添加更多箱子</li>
-<li>添加旅行者背包</li>
-<li>添加播放器</li>
-<li>添加更多家具</li>
-<li>添加加速火把</li>
-<li>添加连锁采矿</li>
-<li>添加凿子</li>
-<li><del>添加无尽贪婪:接口</del></li>
-<li>移除经济插件</li>
-<li>添加背包分离插件(配置ing)</li>
-<li>地皮更改为创意模式(试运行)</li>
+<li>添加<code>虚无世界</code></li>
+<li>添加<code>幸运方块</code></li>
+<li>添加<code>更多实用装备2(ExU2)</code></li>
+<li>添加<code>无尽贪婪</code></li>
+<li>添加<code>拔刀剑</code></li>
+<li>添加<code>拔刀剑日系附属包</code></li>
+<li>添加<code>时装工坊</code></li>
+<li>添加<code>更多箱子</code></li>
+<li>添加<code>旅行者背包</code></li>
+<li>添加<code>播放器</code></li>
+<li>添加<code>更多家具</code></li>
+<li>添加<code>加速火把</code></li>
+<li>添加<code>连锁采矿</code></li>
+<li>添加<code>凿子</code></li>
+<li><del>添加<code>无尽贪婪:接口</code></del></li>
+<li><del>移除<code>经济插件</code></del></li>
+<li><del>添加<code>背包分离插件</code>(配置ing)</del></li>
+<li>地皮更改为<code>创意模式</code>(试运行)</li>
+<li>添加<code>饰品栏</code></li>
+<li>添加<code>沉浸工程</code></li>
 </ol>
 <p>服务器将与2020年7月22日0:00-2020年7月22日0:30分关服进行更新维护并迁移角色存档至新服务端<br>具体开服时间以当时公告为准</p>
 <hr>
@@ -223,7 +225,7 @@
     <url>/posts/62162/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="https://storage.live.com/items/BF61C4FE558FA652!3308?authkey=AKpaeURCrBiL48Y" alt="f616ec16-e33d-4597-985f-3cbba17e5bc5.jpg"></p>
 
-    <div id="aplayer-UvSWxkQS" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-ulFRZnVZ" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="4969510655" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ff0000"
     ></div>
 
@@ -512,12 +514,12 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% aplayer &quot;寻&quot; &quot;华晨宇&quot; &quot;https:&#x2F;&#x2F;link.hhtjim.com&#x2F;163&#x2F;472137749.mp3&quot; &quot;&#x2F;music&#x2F;xun.png&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-        <div id="aplayer-xENNwkrC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-GZfeCHqy" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-xENNwkrC"),
+            element: document.getElementById("aplayer-GZfeCHqy"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -536,7 +538,7 @@ inline 在文本里面添加按钮隐藏内容，只限文字
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% meting &quot;2802022828&quot; &quot;netease&quot; &quot;playlist&quot; &quot;autoplay&quot; &quot;mutex:false&quot; &quot;listmaxheight:340px&quot; &quot;preload:none&quot; &quot;theme:#ad7a86&quot;%&#125;</span><br></pre></td></tr></table></figure>
 
-    <div id="aplayer-UcvLClwC" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-oRNHEAJK" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="2802022828" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"
     ></div>]]></content>
       <categories>
